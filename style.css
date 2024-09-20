@@ -429,6 +429,7 @@ p, h2, h3, li {
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        gap: 3em;
     }
 
     .header-title {
