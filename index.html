@@ -104,5 +104,34 @@
             <div class="footer-copyright">COPYRIGHT © 2024 CENTER FOR AI RISK MANAGEMENT & ALIGNMENT - ALL RIGHTS RESERVED.</div>
         </div>
     </footer>
+
+    <div id="imageModal" class="modal">
+        <img class="modal-content" id="modalImage">
+    </div>
+    <script>
+        if (window.matchMedia("(max-width: 768px)").matches) {
+
+            var modal = document.getElementById('imageModal');
+            var modalImg = document.getElementById("modalImage");
+        
+            var images = document.querySelectorAll('img.flowchart');
+        
+            images.forEach(function(img) {
+                img.style.cursor = 'pointer'; 
+                img.addEventListener('click', function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                });
+            });
+        
+        
+            modal.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        </script>
+        
 </body>
 </html>
