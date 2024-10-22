@@ -15,10 +15,11 @@
                 <div class="subtitle">Probabilistic Risk Assessment for AI</div>
             </div>
             <nav>
-                <a href="index.html">INTRODUCTION</a>
+                <a href="index.html">OVERVIEW</a>
+                <a href="need.html">NEED</a>
+                <a href="taxonomy.html">TAXONOMY</a>
                 <a href="paper.html">PAPER</a>
                 <a href="workbook.html">WORKBOOK</a>
-                <a href="contact.html">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -26,34 +27,39 @@
     <main>
         <div class="content">
             <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0cm;">Introduction to the PRA Framework</h2>
-            <p>The rapid advancement of artificial intelligence is ushering in increasingly capable and versatile systems. As AI technologies evolve to handle a broader range of tasks and environments, and increasing indirection in their direction, they introduce a complex array of potential risks, a profusion of possibilities that are sometimes tricky to witness and evaluate using traditional methods. This makes a more accommodative risk assessment crucial for covering the threat surface.</p>
+            <p>The rapid advancement of artificial intelligence is ushering in increasingly capable and versatile systems. As AI technologies evolve to handle a broader range of tasks and environments, and increasing indirection in their direction, they introduce a complex array of potential risks, a profusion of possibilities that are sometimes tricky to witness and evaluate using traditional methods. This makes a more accommodative risk assessment crucial for covering the threat surface. </p>
             <figure>
                 <img src="Images/useflow.png" alt="PRA Framework Risk Assessment Flowchart" class="flowchart">
                 <figcaption>Figure 1: An overview of the Probabilistic Risk Assessment (PRA) framework.</figcaption>
             </figure>
-            <p>The Probabilistic Risk Assessment (PRA) framework for AI addresses this need by offering an approach to address the specific challenges posed by general-purpose AI systems. This framework is detailed in a forthcoming research paper and accompanying workbook, providing both conceptual foundations and practical guidance for conducting an assessment.</p>
+            <p>The Probabilistic Risk Assessment (PRA) framework for AI addresses this need by offering an approach to address the specific challenges posed by general-purpose AI systems. This framework is detailed in a forthcoming research paper and accompanying workbook, providing both conceptual foundations and practical guidance for conducting an assessment.
+            </p>
             <h3>Purpose and Scope</h3>
             <p>As AI systems become more complex and influential, a portfolio of systematic approaches are needed to assess and manage their risks. The PRA framework aims to contribute lateral lessons from other domain areas to that portfolio, providing a systematic approach to analyzing the manifest and prospective risks associated with general-purpose AI systems. Its primary goals are to:</p>
+            
             <ol>
                 <li>Offer a structured approach for analysis of both direct hazards and complex risk interactions.</li>
                 <li>Facilitate generation of risk likelihood levels estimates across a broad spectrum of potential hazards, with accommodation for potential risk pathways and second-order effects.</li>
                 <li>Enhance societal safety by guiding the identification and assessment of risks posed by cutting-edge AI systems, by being a leading indicator rather than simply a retrospective one.</li>
             </ol>
-            <p>This framework focuses on risk assessment and estimation, providing data and insights to support decision-makers in their evaluation of AI system safety and acceptability.</p>
 
-            <h3>Applicability</h3>
-            <p>The PRA framework provides a versatile approach to assessing risks from advanced and general-purpose AI systems across a wide spectrum of architectures and capabilities. This framework is also designed to facilitate the analysis of a broad range of threats to the world that can be attributable to an advanced AI technology, supporting both current and future systems.</p>
+            <h3>Prospective Analysis</h3>
+            <p>The PRA framework emphasizes prospective analysis as a critical component in assessing AI risks. This forward-looking approach is essential due to the rapid advancement and evolving nature of AI technologies. Prospective analysis allows for:</p>
+            <ul>
+                <li>Anticipation of potential risks before they manifest</li>
+                <li>Modeling of complex, indirect, and potentially unforeseen consequences</li>
+                <li>Early identification of critical control points and safety measures</li>
+            </ul>
 
-            <h2>Assessment Process</h2>
-            <p>The PRA framework follows a structured process to assess AI risks:</p>
+            <h3>Assessment Process</h3>
             <ol>
                 <li>Select Complexity of Assessment</li>
                 <li>Execute Assessment:
-                    <ul>
+                    <ol type="a">
                         <li>Choose Aspects</li>
                         <li>Generate Risk Scenarios:
-                            <ol>
-                                <li>De novo</li>
+                            <ol type="i">
+                                <li>Fault Tree Analysis</li>
                                 <li>Utilizing Plausible Qualifiers and Risk Detail Table</li>
                                 <li>Expert Elicitation Methods</li>
                                 <li>Capability and Domain Knowledge Levels Tables</li>
@@ -64,7 +70,7 @@
                         <li>Analyze Harm Severity Levels</li>
                         <li>Determine Likelihood Levels</li>
                         <li>Risk Levels Estimates Generated</li>
-                    </ul>
+                    </ol>
                 </li>
                 <li>Review Report Card</li>
             </ol>
@@ -76,25 +82,40 @@
 
             <p>For detailed instructions on conducting assessments and a deeper understanding of the conceptual foundations, readers are encouraged to consult the forthcoming research paper and the accompanying workbook, which includes the User Guide (beta 0.9).</p>
             
-            <h2>Foundational Background</h2>
-            <p>Traditional probabilistic risk assessment (PRA) often begins by assuming an initiating event. In manufacturing, this event might be the failure of a specific piece of equipment or component. In AI, this event might be “jailbreaking” and subsequent use of the AI by a hostile actor, fine-tuning that changes its behavior, a mistake or hallucination of important information, or a sudden jump in capabilities. </p>
-            
-            <p>Impacts caused by such an event can be of several types:</p>
+            <h3>Foundational Background</h3>
+            <p>Traditional probabilistic risk assessment (PRA) often begins by assuming an initiating event. In manufacturing, this event might be the failure of a specific piece of equipment or component. In AI, this event might be "jailbreaking" and subsequent use of the AI by a hostile actor, fine-tuning that changes its behavior, a mistake or hallucination of important information, or a sudden jump in capabilities.</p>
 
+            <h3>Impact Types:</h3>
             <ul>
-                <li><strong>Direct results of the failure or event</strong> - e.g. a manufacturing shutdown; a deepfake campaign; an AI becoming harder to control, understand, or steer.</li>
-                <li><strong>Indirect results from a series of related events</strong> - e.g. increased wear and tear on nearby equipment; erosion of trust; structurally deleterious job loss; intentional subversion and manipulation by AI systems or by hostile actors prompting them.</li>
-                <li><strong>Cascading results involving secondary or simultaneous failures</strong> - e.g. a breaker fails to close, turning a short circuit into a much larger grid shutdown; a safety system fails, causing injury; an AI system gains multiple dangerous capabilities at once; an AI system gains the capacity to improve itself or design successor systems without human intervention.</li>
+                <li><strong>Direct results</strong> of the failure or event - e.g. a manufacturing shutdown; a deepfake campaign; an AI becoming harder to control, understand, or steer.</li>
+                <li><strong>Indirect results</strong> from a series of related events - e.g. increased wear and tear on nearby equipment; erosion of trust; structurally deleterious job loss; intentional subversion and manipulation by AI systems or by hostile actors prompting them.</li>
+                <li><strong>Cascading results</strong> involving secondary or simultaneous failures - e.g. a breaker fails to close, turning a short circuit into a much larger grid shutdown; a safety system fails, causing injury; an AI system gains multiple dangerous capabilities at once; an AI system gains the capacity to improve itself or design successor systems without human intervention.</li>
             </ul>
+
             <p>Understanding and modeling how these causal pathways may lead to harmful results - and estimating the likelihood of each intermediate possibility - is an important part of risk assessment. In AI, these pathways are particularly complex due to the system’s evolving and often unpredictable nature. By adopting traditional PRA methods to the specific case poised by AI, we can provide a more structured and systematic approach to assessing these emerging threats.</p>
+            
+            <figure>
+                <img src="Images/tree_flow.png" alt="An event tree of a jailbreak attack." class="flowchart">
+                <figcaption>Figure 3: An event tree of a jailbreak attack.</figcaption>
+            </figure>
+
+            <p>The PRA framework asks assessors to think through potential failure pathways when generating risk scenarios. This approach incorporates elements of fault tree analysis, where one works backwards from an undesired event to identify its causes. Assessors should consider how different system components or events might interact to produce harmful outcomes. This mental process, combined with the forward-looking event tree analysis, helps capture complex risk factors and their relationships. Together, these techniques lead to more comprehensive scenario generation, addressing the unique challenges posed by AI systems.</p>
+            
             <h2>Current State of the Framework</h2>
             <div class="framework-status">
-                <p><strong>Research Paper:</strong> Scheduled for release in early Q4 2024. <a href="paper.html">Learn more.</a></p>
-                <p><strong>Workbook (v0.9):</strong> A forthcoming working beta with functional components, scheduled for release in early Q4 2024. <a href="workbook.html">Learn more.</a></p>
+                <p><strong>Workbook (v0.9):</strong> An alpha version with functional components, available in early Q4 2024. <a href="workbook.html">Learn more.</a></p>
+                <p><strong>Research Paper:</strong> Scheduled for release in Q4 2024. <a href="paper.html">Learn more.</a></p>
             </div>
-            <h2>Authors</h2>
-            The Comprehensive Risk Assessment Team at the Center for AI Risk Management & Alignment (CARMA). CARMA is dedicated to managing risks associated with transformative AI, focusing on methods for accurate mapping and sizing of outsized risks from AI systems.
-            
+            <h2>Contact Us</h2>  
+            <p>The PRA framework is continuously evolving to address the rapidly advancing field of AI risk assessment. We value your insights and feedback to help refine our framework and ensure it remains as useful as it can be in AI safety practice. Whether you have questions, suggestions, or want to discuss customizing the framework for your specific needs, we encourage you to reach out to us via email:</p>
+            <div class="contact-info">
+                <p>
+                    PRA<img src="Images/at-sign-symbol.png" alt="--" class="at-symbol">carma<img src="Images/fullstop.png" alt="-" class="fs-symbol">org
+                </p>
+            </div>
+            <p>We appreciate your interest in the PRA for AI framework.</p>
+            <h2>About CARMA</h2>
+            <p>The <a href="https://carma.org/" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" target="_blank">Center for AI Risk Management & Alignment</a> (CARMA) is a project of Social & Environmental Entrepreneurs, Inc., a 501(c)(3) nonprofit public charity, and is dedicated to managing risks associated with transformative artificial intelligence. Our mission is to lower the risks to humanity and the biosphere from transformative AI. CARMA's research addresses critical challenges in AI risk assessment and governance. We focus on methods for mapping and sizing of outsized risks from transformative AI, and conduct research on technical AI governance and public security measures.</p>
         </div>
     </main>
     <div class="header-bar">‎</div>

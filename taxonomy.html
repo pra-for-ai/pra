@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>PRA Framework - Taxonomy of Aspect-Oriented AI Hazards (TAOAIH)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .taxonomy-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .taxonomy-table th, .taxonomy-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .taxonomy-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .tl2 {
+            background-color: #e6f5ee;
+            cursor: pointer;
+        }
+        .tl3-content {
+            display: none;
+            padding-left: 15px;
+        }
+        .tl3-item {
+            margin-bottom: 5px;
+        }
+        .collapse-icon {
+            float: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <h1><a href="index.html" style="color: #F5F5F5; text-decoration: none;">PRA Framework</a></h1>
+                <div class="subtitle">Taxonomy of Aspect-Oriented AI Hazards</div>
+            </div>
+            <nav>
+                <a href="index.html">OVERVIEW</a>
+                <a href="need.html">NEED</a>
+                <a href="taxonomy.html">TAXONOMY</a>
+                <a href="paper.html">PAPER</a>
+                <a href="workbook.html">WORKBOOK</a>
+            </nav>
+        </div>
+    </header>
+    <div class="header-bar">‎</div>
+
+    <main>
+        <div class="content">
+            <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0cm;">Introduction to the Taxonomy</h2>
+            
+            <p>The aspect-oriented taxonomy of AI hazards is a key driver of the PRA for AI framework. It is a principles-derived, top-down extensive span of the four AI system aspects; Capabilities, Domain Knowledge, Affordances and Impact Domains, used to derive an extensive list of AI Hazards.</p>
+
+            <h3>Taxonomy Structure</h3>
+            <p>The aspect-oriented taxonomy of AI hazards is organized into the following Taxonomy Levels (TLs):</p>
+
+            <div class="taxonomy-structure">
+                <ul>
+                    <li><strong>TL0: Aspect Category</strong> - The highest-level classification, representing the primary dimensions of AI system analysis in sociotechnical context</li>
+                    <li><strong>TL1: Aspect Group</strong> - Major subdivisions within each Aspect Category, providing a more granular framework for analysis</li>
+                    <li><strong>TL2: Aspect</strong> - Specific elements or characteristics within each Aspect Group, offering detailed points of consideration for hazard identification</li>
+                    <li><strong>TL3: Hazard Cluster</strong> - Groupings of related hazards that may span multiple Aspects, allowing for flexible categorization and cross-cutting analysis</li>
+                    <li><strong>TL4: AI Hazard (Aspect-derived)</strong> - Individual, specific hazards derived from the analysis of various Aspects and their interactions, representing concrete risks within the AI system's sociotechnical context</li>
+                </ul>
+            </div>
+
+            <h3>Taxonomy Overview</h3>
+            <p>The taxonomy of aspect-oriented AI hazards is presented below. In this visualization:</p>
+            <ul>
+                <li>Dark-colored boxes represent Aspect Categories (TL0)</li>
+                <li>Medium-colored boxes indicate Aspect Groups (TL1)</li>
+                <li>Light-colored boxes show individual Aspects (TL2)</li>
+            </ul>
+
+            <p>You can scroll through the visualization to explore the detailed structure and content of the taxonomy. The Hazard Clusters and Aspect-Derived Hazards will be released on this webpage soon.</p>
+
+            <div class="taxonomy-container">
+                <div class="bounding-box main-box"></div>
+                <div class="bounding-box harms-box"></div>
+
+                <div class="taxonomy-category">
+                    <div class="aspect-category capabilities">Capability</div>
+                    <div class="aspect-group">
+                        <div class="capabilities-group-title">Reasoning</div>
+                        <div class="aspect capabilities-bg">Deductive Reasoning</div>
+                        <div class="aspect capabilities-bg">Inductive Reasoning</div>
+                        <div class="aspect capabilities-bg">Pathfinding</div>
+                        <div class="aspect capabilities-bg">Generative Inferential Reasoning</div>
+                        <div class="aspect capabilities-bg">Moral Reasoning</div>
+                        <div class="aspect capabilities-bg">Integrative Cognitive Orchestration</div>
+                        <div class="aspect capabilities-bg">Recursion</div>
+                        <div class="aspect capabilities-bg">Frequency of Learning</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="capabilities-group-title">Agency</div>
+                        <div class="aspect capabilities-bg">Autonomy</div>
+                        <div class="aspect capabilities-bg">Situational Awareness</div>
+                        <div class="aspect capabilities-bg">Meta-agency</div>
+                        <div class="aspect capabilities-bg">Autonomous System Extension</div>
+                        <div class="aspect capabilities-bg">Autonomous Data Management</div>
+                        <div class="aspect capabilities-bg">Persistence of Intent</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="capabilities-group-title">General Knowledge Structure</div>
+                        <div class="aspect capabilities-bg">World Model Richness</div>
+                        <div class="aspect capabilities-bg">Semantic Knowledge</div>
+                        <div class="aspect capabilities-bg">Descriptive Knowledge</div>
+                        <div class="aspect capabilities-bg">Conditional Knowledge</div>
+                        <div class="aspect capabilities-bg">Episodic Knowledge</div>
+                        <div class="aspect capabilities-bg">Procedural Knowledge</div>
+                        <div class="aspect capabilities-bg">Agentic Knowledge</div>
+                        <div class="aspect capabilities-bg">Knowledge Plasticity</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="capabilities-group-title">Environment Interaction</div>
+                        <div class="aspect capabilities-bg">World Accessibility</div>
+                        <div class="aspect capabilities-bg">Physical Actuation</div>
+                        <div class="aspect capabilities-bg">Sensor Understanding</div>
+                        <div class="aspect capabilities-bg">Programmatic Tool Use</div>
+                        <div class="aspect capabilities-bg">Socio-cultural Actuation</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="capabilities-group-title">Richness of Engagement</div>
+                        <div class="aspect capabilities-bg">Psychosocial Navigation</div>
+                        <div class="aspect capabilities-bg">Multimodal Engagement</div>
+                        <div class="aspect capabilities-bg">Cognitive Offloading</div>
+                        <div class="aspect capabilities-bg">Multilinguality</div>
+                        <div class="aspect capabilities-bg">Capacity & Resolution</div>
+                    </div>
+                </div>
+                
+                <div class="taxonomy-category">
+                    <div class="aspect-category domain-knowledge">Domain Knowledge</div>
+                    <div class="aspect-group">
+                        <div class="domain-knowledge-group-title">High-risk Knowledge Domain</div>
+                        <div class="aspect domain-knowledge-bg">Software & AI Engineering</div>
+                        <div class="aspect domain-knowledge-bg">Public Security & Critical Systems</div>
+                        <div class="aspect domain-knowledge-bg">Physical Sciences & Engineering</div>
+                        <div class="aspect domain-knowledge-bg">Life & Environmental Sciences</div>
+                        <div class="aspect domain-knowledge-bg">Social Sciences</div>
+                    </div>
+                </div>
+                
+                <div class="taxonomy-category">
+                    <div class="aspect-category features">Affordance</div>
+                    <div class="aspect-group">
+                        <div class="features-group-title">Operational Affordance</div>
+                        <div class="aspect features-bg">System Cybersecurity</div>
+                        <div class="aspect features-bg">Release Process</div>
+                        <div class="aspect features-bg">Tool Accessibility</div>
+                        <div class="aspect features-bg">Access Control</div>
+                        <div class="aspect features-bg">Speed & Scale</div>
+                        <div class="aspect features-bg">Resource Access</div>
+                    </div>
+                </div>
+                
+                <div class="taxonomy-category">
+                    <div class="aspect-category harms">Impact Domain</div>
+                    <div class="aspect-group">
+                        <div class="harms-group-title">Individual</div>
+                        <div class="aspect harms-bg">Bodily Structure</div>
+                        <div class="aspect harms-bg">Psychological & Cognitive</div>
+                        <div class="aspect harms-bg">Economic & Opportunities</div>
+                        <div class="aspect harms-bg">Privacy & Security</div>
+                        <div class="aspect harms-bg">Autonomy & Agency</div>
+                        <div class="aspect harms-bg">Biological Processes & Homeostasis</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="harms-group-title">Societal</div>
+                        <div class="aspect harms-bg">Societal Infrastructure & Institutions</div>
+                        <div class="aspect harms-bg">Collective Psychology & Epistemics</div>
+                        <div class="aspect harms-bg">Resource Usage & Distribution</div>
+                        <div class="aspect harms-bg">Privacy & Security Standards</div>
+                        <div class="aspect harms-bg">Collective Autonomy & Governance</div>
+                        <div class="aspect harms-bg">Social Cohesion & Cultural Norms</div>
+                    </div>
+                    <div class="aspect-group">
+                        <div class="harms-group-title">Biosphere</div>
+                        <div class="aspect harms-bg">Biodiversity & Ecosystem Structure</div>
+                        <div class="aspect harms-bg">Ecosystem Processes & Life Cycles</div>
+                        <div class="aspect harms-bg">Resource Distribution & Consumption Patterns</div>
+                        <div class="aspect harms-bg">Ecological Thresholds & Resilience</div>
+                        <div class="aspect harms-bg">Species Adaptation & Ecosystem</div>
+                        <div class="aspect harms-bg">Global Biosphere Dynamics</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="header-bar">‎</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">CENTER FOR AI RISK MANAGEMENT & ALIGNMENT</div>
+            <div class="footer-copyright">COPYRIGHT © 2024 CENTER FOR AI RISK MANAGEMENT & ALIGNMENT - ALL RIGHTS RESERVED.</div>
+        </div>
+    </footer>
+</body>
+</html>

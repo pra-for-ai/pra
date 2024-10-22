@@ -6,6 +6,95 @@
     <meta name="robots" content="noindex">
     <title>PRA Framework: The PRA for AI Workbook</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        .thumbnail {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .thumbnail p {
+            margin: 0.5rem 0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            padding: 0 5px;
+        }
+        @media screen and (max-width: 768px) {
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .thumbnail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .image-gallery {
+        margin: 2rem 0;
+        }
+
+        .image-gallery h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        }
+
+        .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        }
+
+        .gallery-grid figure {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        }
+
+        .gallery-grid figure:hover {
+        transform: translateY(-5px);
+        }
+
+        .gallery-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        }
+
+        .gallery-grid figcaption {
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #333;
+        font-style: normal;
+        }
+
+        @media screen and (max-width: 768px) {
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -15,10 +104,11 @@
                 <div class="subtitle">The PRA for AI Workbook</div>
             </div>
             <nav>
-                <a href="index.html">INTRODUCTION</a>
+                <a href="index.html">OVERVIEW</a>
+                <a href="need.html">NEED</a>
+                <a href="taxonomy.html">TAXONOMY</a>
                 <a href="paper.html">PAPER</a>
                 <a href="workbook.html">WORKBOOK</a>
-                <a href="contact.html">CONTACT</a>
             </nav>
         </div>
     </header>
@@ -26,10 +116,52 @@
     <main>
         <div class="content">
             <p>The PRA for AI workbook is a tool for conducting probabilistic risk assessments of AI systems. It offers an integrated environment for assessing potential risks from AI systems, including all reference objects and protocols for selecting assessment complexity, executing the assessment, and generating a final risk report card.</p>
-            <p>The current version of the workbook is 0.9, representing a working beta, and will be released on this page in early Q4 2024. This version includes structured support for scanning potential risks through a Taxonomy of Aspect-Oriented AI Hazards, extensive guidance on generating risk scenarios and estimating levels of risk, and detailed instructions on systematically documenting each step of the process. At the conclusion, users receive an auto-generated risk Report Card summarizing their findings.</p>
-            <p>The development team is actively seeking user feedback to enhance and streamline the assessment workflow.</p>    
-        </div>
-    </main>
+            <div class="image-gallery">
+                <h2>Workbook Preview</h2>
+                <div class="gallery-grid">
+                  <figure>
+                    <img src="/Images/userguide.png" alt="User Guid">
+                    <figcaption>User Guide</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="/Images/entrylog.png" alt="Risk Assessment Entry Log">
+                    <figcaption>Risk Assessment Entry Log</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="Images/HSLTable.png" alt="Harm Severity Levels">
+                    <figcaption>Harm Severity Levels</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="/Images/riskdetail.png" alt="Risk Detail Table">
+                    <figcaption>Risk Detail Table</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="Images/pathwayoperators.png" alt="Risk Pathway Operator">
+                    <figcaption>Risk Pathway Operators</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="Images/aspectinteractions.png" alt="Aspect Interactions Matrix">
+                    <figcaption>Aspect Interactions Matrix</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="Images/LLTable.png" alt="Likelihood Levels">
+                    <figcaption>Likelihood Levels Table</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="Images/RLTable.png" alt="Risk Levels">
+                    <figcaption>Risk Levels Table</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="/Images/reportcard.png" alt="Report Card">
+                    <figcaption>Report Card</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p>The current version of the workbook is 0.9, representing a working alpha is available for <a href="https://docs.google.com/spreadsheets/u/2/d/1QfTgx1ed9PiqnskRB5f7E_20KLdyBbXei1jlHof1s8M/copy" target="_blank">download</a>. This version includes structured support for scanning potential risks through an aspect-oriented taxonomy of AI Hazards, extensive guidance on generating risk scenarios and estimating levels of risk, and detailed instructions on systematically documenting each step of the process. At the conclusion, users receive an auto-generated risk report card summarizing their findings. The report card includes a button that allows users to generate a risk assessment output log - a static version of the entry log that preserves risk scenarios, assumptions, and data for future reference and comparison.</p>
+              <p>The development team is actively seeking user feedback to enhance and streamline the assessment workflow.</p>
+    
+          </div>
+        </main>
     <div class="header-bar">‎</div>
     <footer>
         <div class="footer-content">
