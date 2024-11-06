@@ -96,7 +96,7 @@ header {
 }
 
 .header-content {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@ main {
     flex: 1 0 auto;
 }
 .content {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     padding: 1rem;
     background-color: #ffffff;
@@ -181,16 +181,18 @@ h3 {
   }
   figure {
     max-width: 100%;
+    margin: 0 auto;
     text-align: center;
   }
   .flowchart {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 20px auto;
  }
   figcaption {
     margin-top: 1rem;
+    font-size: small;
     color: #555;
   }
 .mainimage {
