@@ -77,7 +77,10 @@
             
             <figure>
                 <img src="Images/heatmap.png" alt="Comparison of Risk Assessment Methods" class="flowchart">
-                <figcaption>Figure 1: Comparison of Risk Assessment Methods.</figcaption>
+                <figcaption>Figure 1: Comparison of Risk Assessment Methods. <br>
+                    Legend: H = High, M = Medium, L = Low. Scores indicate the degree to which each method
+addresses or fulfills the given criterion
+                </figcaption>
             </figure>
 
             <p>We find that no single method excels across all criteria, highlighting the need for a multi-faceted approach to AI risk assessment. In particular, many current methods struggle with threat surface coverage and robustness to mitigation failure. However, probabilistic risk assessment shows the most balanced performance across dimensions.</p>
@@ -113,5 +116,32 @@
             <div class="footer-copyright">COPYRIGHT © 2024 CENTER FOR AI RISK MANAGEMENT & ALIGNMENT - ALL RIGHTS RESERVED.</div>
         </div>
     </footer>
+    <div id="imageModal" class="modal">
+        <img class="modal-content" id="modalImage">
+    </div>
+    <script>
+        if (window.matchMedia("(max-width: 768px)").matches) {
+
+            var modal = document.getElementById('imageModal');
+            var modalImg = document.getElementById("modalImage");
+        
+            var images = document.querySelectorAll('img.flowchart');
+        
+            images.forEach(function(img) {
+                img.style.cursor = 'pointer'; 
+                img.addEventListener('click', function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                });
+            });
+        
+        
+            modal.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        </script>
 </body>
 </html>
