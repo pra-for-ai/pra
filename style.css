@@ -388,6 +388,104 @@ button, .x-button, .x-el-button {
     height: 0.3em; 
     margin-top: 0.14mm;
   }
+  .assessment-matrix {
+    width: 100%;
+    max-width: 1000px;
+    font-family: Quicksand, sans-serif;
+  }
+  
+  .matrix-header {
+    margin-bottom: 2px;
+  }
+  
+  .matrix-row {
+    display: flex;
+    /* margin-bottom: 10px; */
+    height: auto;
+    min-height: 35px;
+    align-items: center;
+    align-items: center;
+  }
+  
+  .method-col {
+    width: 120px;
+    padding-right: 10px;
+    font-size: 11px;  /* Reduced font size */
+    color: #333;
+    text-align: left;
+  }
+  
+  .criteria-cols {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1px;
+  }
+  
+  /* Enhanced header styling */
+  .category-section.span-4 {
+    grid-column: span 4;
+  }
+  
+  .category-section.span-3 {
+    grid-column: span 3;
+  }
+  
+  .category-section.span-2 {
+    grid-column: span 2;
+  }
+  
+  .category-section {
+    position: relative;
+    text-align: center;
+    padding: 9px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2c3e50;
+    background: #F7FAFD;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .category-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #333;
+  }
+
+  .criteria {
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 10px;  
+    min-height: 35px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .score {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1px;
+    font-size: 11px;  /* Restored font size */
+  }
+  
+  .score.high {
+    background-color: #8CB5EC;
+  }
+  
+  .score.medium {
+    background-color: #C9E0F3;
+  }
+  
+  .score.low {
+    background-color: #ECF4FB;
+  }
 
 .content,
 p, h2, h3, li {
@@ -489,5 +587,16 @@ p, h2, h3, li {
         display: block;
         margin: 0 auto;
     }
+    .assessment-matrix {
+        overflow-x: auto;
+      }
+      
+      .method-col {
+        min-width: 160px;
+      }
+      
+      .criteria-cols {
+        min-width: 720px;
+      }
 }
 

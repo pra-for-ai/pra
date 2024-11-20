@@ -32,82 +32,280 @@
         <div class="content">
             <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0cm;">Characteristics of Increasingly General-Purpose AI Risk</h2>
 
-            <p>Due to the unprecedented leverage that advanced AI affords, assessment of advanced AI must contend with relatively unique factors that differentiate it from many other types of risk assessments:</p>
+            <p>Advanced AI systems possess unprecedented leverage and unique characteristics that set them apart from traditional technologies:</p>
 
             <ol>
-                <li><strong>Global impact:</strong> Given their widespread proliferation and adoption, and given the unprecedented leverage that such systems provide, AI systems have the potential for widespread, even global, effects.</li>
-                <li><strong>Unprecedented capabilities:</strong> AI systems are developing capabilities that are neither explicitly designed nor explicitly trained for, and which often have no historical precedent, making it difficult to assess risks based on past experiences.</li>
-                <li><strong>Dual use threats:</strong> Malicious actors may attempt to exploit or manipulate AI models, or simply give them purposely harmful goals.</li>
-                <li><strong>Vulnerability to systemic failures:</strong> Many AI safety measures rely on centralized controls or specific constraints. If these are compromised—for instance, through unauthorized access to model weights or unrestricted internet access—the consequences could be severe and far-reaching.</li>
-                <li><strong>Rapid evolution:</strong> The field of AI is advancing at an unprecedented pace, requiring risk assessment methods that can keep up with and anticipate new developments. AI agents can show unexpected capability jumps, potentially replicate and improve themselves at rapid speeds.</li>
-                <li><strong>Loss of control:</strong> The lack of warnings of risk, the complexity, and the speed at which initiating events of unintended side effects develop will often exceed the capacities of humans to stop those chains once they start.</li>
-                <li><strong>Complex interactions:</strong> AI systems can interact with their environment and other systems in ways that are difficult to predict, leading to emergent behaviors and risks.</li>
+                <li><b>Global impact:</b> Given their widespread direct adoption, broad proliferation, and unprecedented leverage, AI systems have the potential for widespread, even global, effects.</li>
+                
+                <li><b>Emergent behaviors:</b> AI systems can develop behaviors and pursue objectives that emerge from, but were not explicitly encoded in, their training. These behaviors often lack historical precedent, making risk assessment through traditional pattern-matching difficult.</li>
+                
+                <li><b>Dual use threats:</b> Malicious actors may attempt to exploit or manipulate AI models, or simply give them purposely harmful goals.</li>
+                
+                <li><b>Vulnerability to systemic failures:</b> Many AI safety measures rely on centralized controls or specific constraints. If these are compromised—for instance, through unauthorized access to model weights or unrestricted internet access—the consequences could be severe and far-reaching.</li>
+                
+                <li><b>Rapid evolution:</b> The field of AI is advancing at an unprecedented pace, requiring risk assessment methods that can keep up with and anticipate new developments. AI agents can show unexpected capability jumps and may gain the ability to replicate and improve themselves at rapid speeds.</li>
+                
+                <li><b>Loss of control:</b> The speed at which unintended side effects develop, combined with the complexity of AI systems, often surpasses our capability to intervene effectively once a harmful chain of events is set in motion.</li>
+                
+                <li><b>Complex interactions:</b> AI systems can interact with their environment, other AI systems, and humans in adaptive, self-reinforcing ways, often producing emergent behaviors and cascading risks that are difficult to foresee or contain.</li>
             </ol>
 
-            <p>As AI models advance in size and capability, they demonstrate an increasingly general breadth of competences, within which they enable superhuman speed and abilities. Empirical evidence sets a lower bound on the capabilities and dangers that AI models can pose: deepfake creation, specific vectors of cyber offense uplift, and hallucination are of course examples of readily reproducible risks. Benchmarks and traditional evals are imperfect tools to measure these, but they get much of the way to what is needed to do so.</p>
-
+            <p>As AI models advance in size and capability, they demonstrate an increasingly general breadth of competences, within which they enable superhuman speed and abilities. Empirical evidence sets a lower bound on the capabilities and dangers that AI models can pose: deepfake creation, specific vectors of cyber offense uplift (i.e., enhancement of cyber-attack strategies and effectiveness), and hallucination are examples of readily reproducible risks. Benchmarks and traditional evals are imperfect tools to measure these, but they get much of the way there.</p>
+                        
             <p>But the risks posed by today's and tomorrow's models enter territory for which no precedent yet exists. Large problems lurk beyond the horizon of what can be tested in a few weeks. AI risk assessment must therefore draw more heavily on analytical models, theory, and expert testimony than most popular methods.</p>
 
             <h2>Need for AI Probabilistic Risk Assessment</h2>
 
-            <p>These unique characteristics of AI systems create a pressing need for risk assessment methodologies. Key factors driving this need include:</p>
-            <ul>
-                <li><strong>Rapid risk development:</strong> The rapid pace of development towards general purpose AI systems that can bring with them dangerous hazards necessitates an assessment procedure to help ensure the safety of these systems.</li>
-                <li><strong>Limitations of current methods:</strong> Existing approaches may not fully capture the complexity and scale of AI risks.</li>
-                <li><strong>Proactive assessment:</strong> There's a need for methods that can identify and evaluate potential risks before they manifest.</li>
-                <li><strong>Regulatory demand:</strong> Regulators need a broader and deeper mix of options for evaluating and setting thresholds for AI systems.</li>
-            </ul>
-            <p>The application of well-established risk management, system safety engineering, and probabilistic risk assessment methodologies to general-purpose AI systems has been conspicuously absent, despite their proven effectiveness in other fields. This makes the urgency of developing a structured risk assessment method for AI urgent and crucial.</p>
+            <p>The unique characteristics of AI systems demand specialized risk assessment methodologies. Key factors driving this need include:</p>
 
+            <ul>
+                <li><b>Rapid risk development:</b> The rapid pace of development toward general-purpose AI systems, which may introduce significant hazards, necessitates specialized assessment procedures to ensure their safety.</li>
+                
+                <li><b>Limitations of current methods:</b> Traditional risk assessment approaches do not adequately address the complexity and scale of AI risks. Many more parties need to think about risk management for AI as a differential threat assessment for the world.</li>
+                
+                <li><b>Prospective assessment:</b> Methods must identify and model latent risks beyond those that can be easily elicited before they manifest, due to the scale of risks.</li>
+                
+                <li><b>Regulatory demand:</b> Regulators require a broader and deeper mix of methods to evaluate AI systems and establish meaningful safety thresholds.</li>
+            </ul>
+
+            <p>The application of well-established risk management, system safety engineering, and probabilistic risk assessment methodologies to general-purpose AI systems has been conspicuously absent, despite their proven effectiveness in other fields. This makes the urgency of developing a structured risk assessment method for AI urgent and crucial.</p>
+                        
             <h2>Comparison of Risk Assessment Methods</h2>
 
-            <p>Current AI risk evaluation methods vary in their approach and effectiveness. In particular, they vary across the following criteria for comprehensive threat surface analysis:</p>
+            <p>Current AI risk assessment methods vary in their approach and effectiveness. In particular, they vary across the following criteria for comprehensive threat surface analysis:</p>
+
             <ul>
-                <li>A method can be more or less fine-grained. A fine-grained method can produce many different outputs, whereas a coarse-grained method might only produce a few.</li>
-                <li>A method can be a better or worse proxy for safety.</li>
-                <li>A method can cover more or less of the AI risk "threat surface," e.g., by number of threat models.</li>
-                <li>A method can be more or less robust to mitigation failure. A robust method assumes mitigation failure.</li>
-                <li>A method can guide the assessor over the threat surface of AI risk — or, it can lack such guidance.</li>
+                <li>A method can operate at different levels of detail. Fine-grained methods enable detailed analysis of specific risk components, while coarse-grained methods provide higher-level system assessment.</li>
+                
+                <li>A method can cover more or less of the societal threat surface, e.g., by number of threat models.</li>
+                
+                <li>A method can provide systematic guidance over the threat surface of AI risk — or, it can lack such guidance.</li>
+                
                 <li>A method can be more or less informed by a specific system's characteristics — for example, specific capabilities or features.</li>
-                <li>A method can support prospective analysis of a system's risk — that is, it can identify leading indicators of risk, rather than retrospective evaluation once a system is already developed or deployed.</li>
+                
+                <li>A method can be a better or worse proxy for safety.</li>
+                
+                <li>A method can be more or less robust to mitigation failure. A robust method includes the possibility of mitigation failure, estimates its likelihood, and prices it in.</li>
+                
                 <li>A method can be more or less "objective." An objective method requires little or no subjective input — more example, a benchmark is an objective method.</li>
+                
+                <li>A method can support prospective analysis of a system's risk — that is, it can identify leading indicators of risk, rather than retrospective evaluation once a system is already developed or deployed.</li>
+                
                 <li>A method can consider harm severity in addition to likelihood, or only consider likelihood.</li>
             </ul>
-            <p>The image below compares current evaluation methods across these criteria. Scores were assigned based on expert analysis of each method’s capabilities and limitations. High (H) indicates strong performance or comprehensive coverage of the criterion, Medium (M) indicates partial fulfillment, and Low (L) indicates minimal or no attention to the criterion.</p>
-            
-            <figure>
+
+            <p>Figure 1 compares current evaluation methods across these criteria. Ratings were assigned based on expert analysis of each method's capabilities and limitations. High (H) indicates strong performance or comprehensive coverage of the criterion, Medium (M) indicates partial fulfillment, and Low (L) indicates minimal or no attention to the criterion.</p>
+            <!-- <figure>
                 <img src="Images/heatmap.png" alt="Comparison of Risk Assessment Methods" class="flowchart">
                 <figcaption>Figure 1: Comparison of Risk Assessment Methods. <br>
                     Legend: H = High, M = Medium, L = Low. Scores indicate the degree to which each method
 addresses or fulfills the given criterion
                 </figcaption>
-            </figure>
-
-            <p>We find that no single method excels across all criteria, highlighting the need for a multi-faceted approach to AI risk assessment. In particular, many current methods struggle with threat surface coverage and robustness to mitigation failure. However, probabilistic risk assessment shows the most balanced performance across dimensions.</p>
-
+            </figure> -->
+            <figure>
+              <div class="assessment-matrix">
+               <div class="matrix-header">
+                 <!-- Category Headers -->
+                 <div class="matrix-row category-headers">
+                   <div class="method-col"></div>
+                   <div class="criteria-cols">
+                     <div class="category-section span-4">Coverage & Depth</div>
+                     <div class="category-section span-3">Methodological Robustness</div>
+                     <div class="category-section span-2">Assessment Structure</div>
+                   </div>
+                 </div>
+              
+                 <!-- Criteria Headers -->
+                 <div class="matrix-row criteria-row">
+                   <div class="method-col"></div>
+                   <div class="criteria-cols">
+                     <!-- Coverage & Depth -->
+                     <div class="criteria">Fine-grain</div>
+                     <div class="criteria">Threat Surface<br/>Coverage</div>
+                     <div class="criteria">Threat Surface<br/>Guidance</div>
+                     <div class="criteria">Guidance By<br/>System Property</div>
+                     <!-- Methodological Robustness -->
+                     <div class="criteria">Good Proxy<br/>to Safety</div>
+                     <div class="criteria">Robust to<br/>Mitigation Failure</div>
+                     <div class="criteria">Enforces<br/>Objectivity</div>
+                     <!-- Assessment Structure -->
+                     <div class="criteria">Supports<br/>Prospective Analyses</div>
+                     <div class="criteria">Considers<br/>Harm Severity</div>
+                   </div>
+                 </div>
+               </div>
+              
+               <div class="matrix-body">
+                 <div class="matrix-row">
+                   <div class="method-col">Safety Benchmarks<br/>(No Holdout)</div>
+                   <div class="criteria-cols">
+                     <div class="score high">High</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Safety Benchmarks<br/>(Private Holdout)</div>
+                   <div class="criteria-cols">
+                     <div class="score high">High</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score high">High</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Evals</div>
+                   <div class="criteria-cols">
+                     <div class="score high">High</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Responsible Scaling<br/>Policies</div>
+                   <div class="criteria-cols">
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Safety Cases</div>
+                   <div class="criteria-cols">
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score high">High</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Probabilistic Risk<br/>Assessment</div>
+                   <div class="criteria-cols">
+                     <div class="score medium">Medium</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                     <div class="score low">Low</div>
+                     <div class="score high">High</div>
+                     <div class="score high">High</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Typical Narrow AI<br/>Safety Audits</div>
+                   <div class="criteria-cols">
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Deep Bespoke AI<br/>Safety Audits</div>
+                   <div class="criteria-cols">
+                     <div class="score high">High</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score low">Low</div>
+                     <div class="score high">High</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                   </div>
+                 </div>
+              
+                 <div class="matrix-row">
+                   <div class="method-col">Scalable (AGI)<br/>Safety Audits</div>
+                   <div class="criteria-cols">
+                     <div class="score high">High</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score high">High</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score medium">Medium</div>
+                     <div class="score low">Low</div>
+                     <div class="score medium">Medium</div>
+                   </div>
+                 </div>
+               </div>
+              </div>
+              <figcaption>Figure 1: Comparison of Risk Assessment Methods.
+              Ratings indicate the degree to which each method addresses or fulfills the given criterion</figcaption>
+              </figure>
+            <p>A comparative analysis of AI risk assessment methods demonstrates that no single approach excels across all criteria, highlighting the need for a multi-faceted approach. In particular, many current methods struggle with threat surface coverage and robustness to mitigation failure. However, probabilistic risk assessment shows the most balanced performance across dimensions. A forthcoming paper, defining the societal threat surface, will provide a more detailed explanation of risk assessment gaps and how available methods compare.</p>
             <h2>Benefits of the PRA for AI Framework</h2>
+
             <p>The Probabilistic Risk Assessment (PRA) AI framework offers several key benefits that address the unique challenges of AI risk assessment:</p>
+
             <ul>
-                <li><strong>Probabilistic risk assessment:</strong> The framework provides a structured approach to evaluate and quantify potential societal risks from AI systems. It can accommodate variable-resolution and variable-certainty analysis of risk pathways so as to allow for a nuanced understanding of complex risk scenarios.</li>
-                <li><strong>Comprehensive system aspect coverage:</strong> The framework uses a Taxonomy of Aspect-Oriented AI Hazards that covers AI Capabilities, Knowledge Domains, operational Affordances, and sociotechnical Impact Domains. It captures first and second order risks, considering effects on individuals, society, and the biosphere.</li>
-                <li><strong>Top-down view of AI hazards:</strong> The framework offers a top-down perspective on the hazards from general purpose AI systems. This includes a structured approach to examining both competence-based and incompetence-based hazards across various aspects of AI systems.</li>
-                <li><strong>Consideration of direct and systemic risks:</strong> The framework allows for the assessment of both immediate, direct harms and more subtle, long-term systemic risks.</li>
-                <li><strong>Explicit assumptions and likelihood documentation:</strong> The framework prompts assessors to make their assumptions and likelihood levels estimates explicit and granular. This transparency enhances the reliability and reproducibility of the assessment process.</li>
+                <li><b>Variable-resolution analysis:</b> The framework supports assessments scaling from quick high-level risk scans to comprehensive technical analysis of specific risk pathways, with clear documentation of scenarios and reasoning at each level.</li>
+                
+                <li><b>Comprehensive system aspect coverage:</b> The framework uses a first principles top-down Taxonomy of Aspect-Oriented AI Hazards that covers AI Capabilities, Knowledge Domains, operational Affordances, and sociotechnical Impact Domains. It captures first and second order risks, considering effects on individuals, society, and the biosphere.</li>
+                
+                <li><b>Risk coverage:</b> The framework offers a top-down perspective on the hazards from general purpose AI systems. This includes a structured approach to examining both competence-based and incompetence-based hazards across the AI system's capabilities, high-risk knowledge domains and operational affordances.</li>
+                
+                <li><b>Consideration of direct and systemic risks:</b> The framework allows for the assessment of both immediate, direct harms and more subtle, long-term systemic risks.</li>
+                
+                <li><b>Explicit assumptions and likelihood documentation:</b> The framework prompts assessors to make their detailed assumptions, reasoning and estimates explicit. This transparency enhances the reliability and reproducibility of the assessment process.</li>
+                
+                <li><b>Integration with assessment methods:</b> The framework unifies and incorporates diverse assessment approaches within a structured evaluation framework. This allows assessment teams to incorporate existing safety cases, benchmarking results, test data and other risk assessment methods alongside or within the PRA methodology.</li>
             </ul>
 
-            <h2>Weaknesses of the PRA for AI Framework</h2>
+            <h2>Framework Limitations</h2>
             <p>There are some weaknesses in the PRA for AI framework: </p>
             <ul>
-                <li><strong>Subjectivity in probability estimates:</strong> Despite structured approaches, assessors may struggle to accurately estimate probabilities for novel or complex AI risks, potentially leading to inconsistent assessments.</li>
+                <li><strong>Subjectivity in probability estimates:</strong> The framework requires careful calibration of probability estimates across assessors, particularly for novel scenarios without historical precedent. This could lead to inconsistent assessments.</li>
                 <li><strong>Rapid AI advancement challenges:</strong> The fast-paced evolution of AI capabilities may outpace the assessment process, making some evaluations quickly outdated.</li>
                 <li><strong>Unknown unknowns:</strong> PRA may not adequately capture unforeseen risks or emergent behaviors in advanced AI systems.</li>
                 <li><strong>Potential for anchoring bias:</strong> Predefined categories and examples might inadvertently anchor assessors' thinking, limiting consideration of unconventional scenarios.</li>
-                <li><strong>Resource intensity:</strong> Thorough PRAs require significant time and expertise, which may be challenging for smaller organizations or rapid development cycles.</li>
-                <li><strong>Limited empirical validation:</strong> Due to the novelty of advanced AI systems, there's a lack of historical data to validate risk assessments, potentially reducing their reliability.</li>
+                <li><strong>Resource intensity:</strong> Thorough PRAs require significant time and expertise, which may be challenging for smaller organizations or rapid development cycles.</li>    
             </ul>
 
-            <!-- <p>For a detailed methodology of the PRA framework, please refer to our <a href="paper.html">forthcoming paper</a>.</p> -->
-        </div>
+            <p>For a detailed methodology of the PRA framework, please refer to our forthcoming paper.</p>
+         </div>
     </main>
     <div class="header-bar">‎</div>
     <footer>
