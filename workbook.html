@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Light mode favicon -->
-    <link rel="icon" href="Images/favicon.png" media="(prefers-color-scheme: light)">
+    
+    <!-- Basic SEO -->
+    <title>PRA Framework: The PRA for AI Workbook</title>
+    <meta name="description" content="A comprehensive framework for probabilistic and prospective risk assessment of AI systems, offering structured methodologies for evaluating systemic risks and societal impacts.">
+    <meta name="author" content="Center for AI Risk Management & Alignment">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="AI, Artificial Intelligence, PRA for AI, PRA framework, PRA workbook, Probabilistic Risk Assessment for AI, Prospective Risk Assessment AI, systemic risks AI, AI risk assessment, risk level AI, threat modeling AI, AI hazard assessment, risk pathway analysis, systemic risk evaluation, artificial intelligence safety, risk estimation, impact assessment AI, risk scenario generation, capability assessment, domain assessment, AI safety framework">
 
-    <!-- Dark mode favicon -->
+    <!-- Favicons -->
+    <link rel="icon" href="Images/favicon.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="Images/favicondark.png" media="(prefers-color-scheme: dark)">
 
-    <title>PRA Framework: The PRA for AI Workbook</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph Protocol Tags -->
+    <meta property="og:title" content="PRA Framework: The PRA for AI Workbook">
+    <meta property="og:description" content="Comprehensive framework for probabilistic and prospective risk assessment of AI systems, with structured methodologies for evaluating systemic risks.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PRA for AI">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "PRA Framework: The PRA for AI Workbook",
+      "description": "A comprehensive framework for conducting probabilistic risk assessments of AI systems, including protocols for systemic risk evaluation and societal impact analysis.",
+      "keywords": "AI risk assessment, probabilistic risk assessment, systemic risk AI, risk pathway analysis, AI safety framework, threat modeling AI",
+      "author": {
+        "@type": "Organization",
+        "name": "Center for AI Risk Management & Alignment"
+      },
+      "inLanguage": "en"
+    }
+    </script>
+
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Existing Styles -->
     <style>
         .thumbnail-grid {
             display: grid;
@@ -50,53 +88,52 @@
             }
         }
         .image-gallery {
-        margin: 2rem 0;
+            margin: 2rem 0;
         }
 
         .image-gallery h2 {
-        text-align: center;
-        margin-bottom: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
         }
 
         .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
         }
 
         .gallery-grid figure {
-        margin: 0;
-        padding: 0;
-        background: #f5f5f5;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
 
-
         .gallery-grid img {
-        width: 100%;
-        height: 200px;
-        display: block;
+            width: 100%;
+            height: 200px;
+            display: block;
         }
 
         .gallery-grid figcaption {
-        padding: 0.5rem;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #333;
-        font-style: normal;
+            padding: 0.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #333;
+            font-style: normal;
         }
 
         @media screen and (max-width: 768px) {
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
         }
-        }
-        
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-content">
@@ -108,7 +145,7 @@
                 <a href="index.html">OVERVIEW</a>
                 <a href="need.html">NEED</a>
                 <a href="taxonomy.html">TAXONOMY</a>
-                <a href="workbook.html">WORKBOOK</a>
+                <a href="workbook/">WORKBOOK</a>
             </nav>
         </div>
     </header>
@@ -171,7 +208,7 @@
               </div>
               <p>First released in October 2024 as version 0.9.0-alpha, the workbook is under continuous development. The current version of the workbook is version 0.9.1, representing a working alpha <a href="https://docs.google.com/spreadsheets/d/1uGJGjbWyXknsgS8YZlVK2tqgetQ7TUPdYse9WOCMQFU/copy" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" target="_blank">available for copy</a>. This version includes structured support for scanning potential risks through an aspect-oriented taxonomy of AI Hazards, extensive guidance on generating risk scenarios and estimating levels of risk, and detailed instructions on documenting each step of the process. At the conclusion, assessors receive an auto-generated risk report card summarizing their findings. The report card includes a button that allows users to generate a risk assessment output log - a static version of the entry log that preserves risk scenarios, assumptions, and data for future reference and comparison.</p>
               <p>The development team is actively seeking user feedback to enhance and streamline the assessment workflow.</p>
-          </div>
+            </div>
         </main>
     <div class="header-bar">‎</div>
     <footer>
