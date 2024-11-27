@@ -688,6 +688,7 @@ p, h2, h3, li {
   width: 18px;
   height: 18px;
 }
+
 .download-section {
   display: flex;
   justify-content: center;
@@ -696,17 +697,22 @@ p, h2, h3, li {
 }
 
 .download-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 13rem;  /* Increased from 12rem */
+  width: auto; /* Changed from 13rem to auto */
+  min-width: 10rem; /* Added minimum width */
   gap: 0.75rem;
   padding: 0.625rem 2rem;
   border-radius: 0.25rem;
   cursor: pointer;
   font-family: Quicksand, sans-serif;
   font-size: 0.875rem;
-  transition: background-color 0.2s;
+  font-weight: 500;
+  text-decoration: none !important; /* Added !important to override any inherited styles */
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .download-button.blue {
@@ -716,22 +722,26 @@ p, h2, h3, li {
 }
 
 .download-button.blue:hover {
-  background-color: #7AA3DA;
+  background-color: #357ABD;
+  text-decoration: none;
 }
 
 .download-button.white {
   background-color: white;
   color: #4A5568;
-  border: 0.5px solid #4A5568;
+  border: 1px solid #4A5568;
 }
 
 .download-button.white:hover {
   background-color: #F7FAFC;
+  text-decoration: none;
 }
+
 .download-button svg {
-  width: 22px;  /* Increased from 18px */
-  height: 22px;  /* Increased from 18px */
+  width: 22px;
+  height: 22px;
 }
+
 
   
 @media screen and (max-width: 768px) {    
@@ -839,11 +849,11 @@ p, h2, h3, li {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-  }
-  
-  .download-button {
-      width: 100%;
+    }
+    
+    .download-button {
+      width: auto;
       max-width: 16rem;
-  }
+    }
 }
 
