@@ -600,24 +600,36 @@ p, h2, h3, li {
   padding: 1rem;
   background-color: white;
   border-radius: 4px;
-  border-left: 4px solid #8CB5EC;
+  position: relative; 
+}
+
+.roadmap-notes::before {  
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;  
+  bottom: 0.5rem;  
+  width: 4px;
+  background-color: #8CB5EC;
+  border-radius: 2px;
 }
 
 .roadmap-notes h3 {
   color: #2c3e50;
   margin: 0 0 0.5rem 0;
+  padding-left: 1rem;  
 }
 
 .roadmap-notes ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1rem;  
   margin: 0;
 }
 
 .roadmap-notes li {
   padding-left: 1.5rem;
   position: relative;
-  
+  margin-top: 0.5rem;  
 }
 
 .roadmap-notes li::before {
@@ -629,7 +641,7 @@ p, h2, h3, li {
 
 .workbook-action-box {
   background-color: #f8faff;  /* Extremely light blue background */
-  border: 1px solid #c6dbfe;  /* Subtle blue border - you can adjust this color to be lighter/darker */
+  border: 1px solid #c6dbfe;  
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1.5rem;
