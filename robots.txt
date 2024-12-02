@@ -1,0 +1,56 @@
+User-agent: *
+Allow: /pra/
+
+# SEO Keywords
+# Core Terms
+# AI, Artificial Intelligence, PRA, PRA for AI, PRA framework, PRA workbook
+
+# Full Official Names
+# Probabilistic Risk Assessment for AI, Probabilistic Risk Assessment Artificial Intelligence
+# Prospective Risk Assessment for AI, Probabilistic Risk Assessment Framework
+# Aspect-Oriented Risk Assessment Framework
+
+# Search-Optimized Variations
+# AI risk assessment, AI risk framework, AI risk evaluation, AI risk analysis
+# AI threat model, AI threat modeling, AI hazard assessment, AI safety assessment
+# artificial intelligence risk, artificial intelligence safety
+
+# Risk Assessment Terms
+# risk level, risk level AI, risk level estimates, risk estimation
+# risk assessment, risk analysis, risk evaluation, risk pathway
+# risk pathway modeling, risk pathway analysis, risk propagation, risk scenario, risk modeling
+
+# Assessment Types
+# probabilistic assessment, prospective assessment, systemic assessment
+# threat assessment, hazard assessment, capability assessment
+# domain assessment, impact assessment
+
+# Framework Components
+# systemic risk, systemic risks AI, systemic risk analysis, systemic risk assessment
+# systemic risk evaluation, pathway analysis, pathway operator
+# pathway modeling, threat model, threat modeling, threat analysis
+# hazard model, hazard modeling, hazard analysis
+
+# Assessment Objects
+# assessment framework, assessment methodology, assessment workflow
+# assessment process, assessment lifecycle, assessment tool, assessment workbook
+
+# Key Phrases
+# societal threat surface, aspect-oriented hazards, capability-based risk
+# domain knowledge risk, operational affordance, impact domain
+# risk propagation, risk mitigation, risk governance
+
+# Methodology Terms
+# assessment methodology, evaluation methodology, analysis framework
+# risk framework, methodology guide, assessment guide
+# assessment protocol, risk protocol
+
+# Action-Oriented Terms
+# assess AI risk, evaluate AI risk, analyze AI risk
+# model AI risk, mitigate AI risk, manage AI risk
+# identify AI risk, measure AI risk
+
+# Technical Terms
+# likelihood estimation, severity assessment, harm assessment
+# impact evaluation, capability analysis, domain knowledge assessment
+# affordance analysis, propagation analysis
