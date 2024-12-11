@@ -526,10 +526,12 @@ p, h2, h3, li {
 }
 
 .video-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: #333;
+    width: 100%;
+    font-weight: normal;
+    color: #333333;
+    margin-top: 1cm;
 }
+
 
 .video-container {
   display: flex;
@@ -540,7 +542,8 @@ p, h2, h3, li {
 
 .video-item {
   max-width: 800px;
-  width: 100%;
+  width: calc(100% - 40px); /* Ensures equal left and right margins */
+  margin: 0 auto;          /* Center-aligns the container */
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -549,6 +552,14 @@ p, h2, h3, li {
   padding: 1rem;
   text-align: center;
 }
+
+.video-item iframe {
+  width: 100%;
+  height: 400px; /* Adjust this value to make it taller */
+  display: block;
+  margin: 0 auto;
+}
+
 
 .video-item h3 {
   margin-top: 1rem;
