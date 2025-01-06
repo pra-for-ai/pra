@@ -748,13 +748,13 @@ p, h2, h3, li {
 }
 
 .download-button.white {
-  background-color: white;
+  background-color: #F7F9FA;
   color: #4A5568;
   border: 1px solid #4A5568;
 }
 
 .download-button.white:hover {
-  background-color: #F7FAFC;
+  background-color: #F1F4F6;
   text-decoration: none;
 }
 
