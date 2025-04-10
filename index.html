@@ -71,22 +71,22 @@
             <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0cm;">Introduction to the PRA Framework</h2>
             <p>The rapid advancement of artificial intelligence is introducing increasingly capable and versatile systems that can handle an ever-broadening range of tasks and environments. As these general-purpose AI systems evolve, their complex influence pathways — from their misuse to immediate misaligned actions — introduce a wide array of potential harms to individuals, society, and the biosphere. This complexity, combined with the profusion of possibilities, often escapes traditional methods of evaluation, making a more comprehensive, prospective risk assessment framework crucial for covering the entire threat surface of a given AI model or system.</p>
 
-            <p>The Probabilistic Risk Assessment (PRA) framework addresses this need by combining:</p>
+            <p>The PRA framework builds on traditional PRA methodology and extends it with key adaptations for AI systems:</p>
 
             <ol>
-                <li><b>Traditional PRA methodology:</b> Draws from established quantitative risk assessment approaches used in high-reliability industries.</li>
-                <li><b>Prospective risk analysis:</b> Applies threat modeling to supplement traditional PRA with low-incidence risks and analytical methods to evaluate potential harms before they manifest, recognizing that the magnitude of AI risks requires systematic analysis of future threats from the AI system.</li>
-                <li><b>Aspect-oriented hazard modeling:</b> Examines via a structured approach the aspect-adjacent hazards (stemming from capabilities, domain knowledge, affordances) and harm-adjacent hazards at either end, with systemic risk propagation operators covering the crucial middle ground that connects them.</li>
-                <li><b>Societal threat assessment:</b> Analyzes how threats from AI systems could exploit or amplify societal vulnerabilities, distinct from traditional enterprise security concerns about protecting AI systems themselves.</li>
+                <li><b>Aspect-oriented hazard analysis.</b> Provides a top-down way for assessors to index or iterate over the space of potential hazards, covering the characteristic aspects of an AI system: capabilities, domain knowledge, affordances, and impact domains. This taxonomy-driven approach guides systematic analysis of how emerging AI capabilities could enable or amplify potential harms through critical bottlenecks.</li>
+                <li><b>Risk pathway modeling.</b> Guides the modeling of the step-by-step progressions of risk from source aspects (i.e., capability, domain knowledge, or affordance) to terminal aspects (i.e., impact domains where harms to individuals, society, or the biosphere are manifested) of the system, and analyzes how risks propagate and amplify via explicit modeling of societal risk propagation operators.</li>
+                <li><b>Prospective risk analysis.</b> Applies threat modeling to supplement traditional PRA with low-incidence risks and analytical methods to evaluate potential harms before they manifest, recognizing that the magnitude of AI risks requires systematic analysis of future threats from the AI system.</li>
+                <li><b>Uncertainty management.</b> Provides structured approaches for addressing multiple layers of uncertainty through explicit methodological guidance, calibration points, comparative analysis tools, documentation requirements, and mechanisms for incorporating diverse evidence sources.</li>
             </ol>
 
-            <p>This integrated approach examines how an increasingly capable AI system could cause harm to society, whether through misuse, loss of control, negative side-effects, systemic degradations, or misaligned actions. The framework specifically addresses threats from any given AI system to society, focusing on pathways of harm that exploit societal vulnerabilities. Teams can systematically identify and analyze potential hazard pathways that might otherwise be overlooked in traditional assessment approaches, whether they are direct threats (like misaligned AI actions) or indirect threats (like societal destabilization through economic disruption).</p>
+            <p>This integrated approach examines how an increasingly capable AI system could cause harm to society, whether through misuse, loss of control, negative side-effects, systemic degradations, or misaligned actions. Teams can systematically identify and analyze potential hazard pathways that might otherwise be overlooked in traditional assessment.</p>
                         
             <figure>
-                <img src="Images/useflow.jpg" alt="PRA Framework Risk Assessment Flowchart" class="flowchart">
+                <img src="Images/overview2.jpg" alt="PRA Framework Risk Assessment Flowchart" class="flowchart">
                 <figcaption>Figure 1: An overview of the Probabilistic Risk Assessment (PRA) framework.</figcaption>
             </figure>
-            <p>The PRA framework provides structured guidance for threat modeling and risk assessment of general-purpose AI systems. It pairs a structured taxonomy for systematic threat scanning with probabilistic risk assessment methods adapted from high-reliability industries. To enable methodical assessments, it provides reference materials for calibration, as well as guidance for scenario development and for estimating risk levels. The accompanying workbook tool provides both conceptual foundations and practical guidance for conducting thorough assessments, with a forthcoming research paper to detail more theoretical foundations.</p>
+            <p>The PRA framework provides structured guidance for threat modeling and risk assessment of general-purpose AI systems, pairing systematic scanning with probabilistic methods. To enable methodical assessments, it provides reference materials for calibration, guidance for scenario development and protocols for estimating risk levels. The accompanying workbook tool provides both conceptual foundations and practical guidance for conducting thorough assessments, with a forthcoming research paper to detail more theoretical foundations.</p> 
             <h3>Purpose and Scope</h3>
             <p>AI systems' increasing complexity and influence necessitates a portfolio of systematic approaches to assess and manage their risks. The PRA framework aims to contribute lateral lessons from other domain areas to that portfolio, providing structured methods for analyzing the potential and realized sources of harm associated with general-purpose AI systems. Its primary goals are to:</p>
             
@@ -120,25 +120,25 @@
 
             <p>Based on organizational requirements, stakeholder priorities, and system characteristics, assessors first select the appropriate complexity of their assessment. This can range from quick, focused discovery to extensive analyses of risk propagation and amplification across society.</p>
 
-            <p>During execution, assessors use the framework's taxonomy of AI hazards to examine different aspects that could enable or amplify harm - whether through pathways that overcome existing safety bottlenecks, knowledge that enables dangerous actions, or affordances that create new vectors for misuse.</p>
+            <p>During execution, assessors use the framework's taxonomy of AI hazards to examine different aspects that could enable or amplify harm - whether through capabilities that overcome existing safety bottlenecks, knowledge that enables dangerous actions, or affordances that create new vectors for misuse.</p>
 
-            <p>The framework's tools and guidance support assessors as they move from aspect-level analysis to threat model development, and then to specific risk scenarios. Using bottleneck-based reasoning, assessors identify where AI systems could differentially enable harmful outcomes. Scenarios are then evaluated by determining harm severity and likelihood levels, deriving risk level estimates. The framework also provides guidance on integration of data sources and techniques for generating risk scenarios. Detailed instructions and supporting tools are available in the accompanying <a href="workbook.html" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Workbook page</a>.</p>
-            <p>For each scenario, assessors detail the most plausible paths to potential harms. The framework's components guide them in evaluating both the severity of potential harms and how likely they are to occur.</p>
+            <p>The framework’s tools and guidance support assessors as they move from aspect-level analysis to threat model development, and then to specific risk scenarios. Using bottleneck-based reasoning, assessors identify where AI systems could differentially enable harmful outcomes. Scenarios are then evaluated by determining harm severity and likelihood levels, deriving risk level estimates. The framework also provides guidance on integration of data sources and techniques for generating risk scenarios. Detailed instructions and supporting tools are available in the accompanying <a href="workbook.html" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Workbook page</a>.</p>
+            <p>For each scenario, assessors detail the most plausible paths to potential harms. The framework’s components guide them in evaluating both the severity of potential harms and how likely they are to occur.</p>
             
             <p>Depending on organizational needs and context, assessors may conduct additional analyses. They can examine how different aspects of the system might interact to create new risks (second order assessment), or analyze how risks could propagate through interconnected social and technical systems (pathway operator enhanced assessment). Figure 2 provides an overview of the process.</p>
 
             <figure>
-                <img src="Images/assessmentflow.jpg" alt="PRA Framework Assessment Process Flowchart" class="flowchart">
+                <img src="Images/assessmentflow2.jpg" alt="PRA Framework Assessment Process Flowchart" class="flowchart">
                 <figcaption>Figure 2: An overview of the risk assessment process flow in PRA.</figcaption>
             </figure>
 
             <p>The assessment process generates risk level estimates and rationales, which are captured in a standardized report card. The risk report card shows the highest level of risk for each of the aspect groups, and optionally allows for the mapping of individual risk scenarios into focused aggregation dimensions, to display custom insights about assessments. The report card results are always reviewed alongside the risk levels table and the documented scenarios, which provide essential context for interpreting the aggregated risks and overall findings.</p>
 
-            <p>For detailed instructions on conducting assessments, consult the accompanying workbook (v0.9.1-alpha), which includes a detailed user guide. During Q1 2025, three forthcoming papers will further explore applying PRA for AI, defining the societal threat surface, and comparing gaps in available AI risk assessment methods.</p>
+            <p>For detailed instructions on conducting assessments, consult the accompanying workbook (v0.9.1-alpha), which includes a detailed user guide. During Q2 2025, three forthcoming papers will further explore applying PRA for AI, defining the societal threat surface, and comparing gaps in available AI risk assessment methods.</p>
 
             <h2>Foundational Background</h2>
 
-            <p>Traditional probabilistic risk assessment (PRA) often begins by assuming an initiating event. In manufacturing, this event might be the failure of a specific piece of equipment or component. In AI, this event might be "jailbreaking" and subsequent use of the AI by a hostile actor, fine-tuning that changes its behavior, a mistake or hallucination of important information, or a sudden jump in capabilities.</p>
+            <p>Traditional probabilistic risk assessment (PRA) often begins by assuming an initiating event. In manufacturing, this event might be the failure of a specific piece of equipment or component. In AI, this event might be “jailbreaking” and subsequent use of the AI by a hostile actor, fine-tuning that changes its behavior, a mistake or hallucination of important information, or a sudden jump in capabilities.</p>
 
             <p>Impacts caused by such an event can be of several types:</p>
             <ul>
@@ -147,23 +147,23 @@
                 <li><b>Cascading results involving secondary or simultaneous failures</b> - e.g. a breaker fails to close, turning a short circuit into a much larger grid shutdown; a safety system fails, causing injury; an AI system gains multiple dangerous capabilities at once; an AI system gains the capacity to improve itself or design successor systems without human intervention.</li>
             </ul>
 
-            <p>Understanding and modeling how these causal pathways may lead to harmful results - and estimating the likelihood of each intermediate possibility - is an important part of risk assessment. In AI, these pathways are particularly complex due to the system's evolving and often unpredictable nature. To help assessors track the various possible outcomes, <b>event trees</b> or <b>decision trees</b> are often used.</p>
+            <p>Understanding and modeling how these causal pathways may lead to harmful results &mdash; and estimating the likelihood of each intermediate possibility &mdash; is an important part of risk assessment. In AI, these pathways are particularly complex due to the system's evolving and often unpredictable nature. To help assessors track the various possible outcomes, <b>event trees</b> or <b>decision trees</b> are often used.</p>
                     
             <figure>
                 <img src="Images/tree_flow.png" alt="An event tree of a jailbreak attack." class="flowchart">
                 <figcaption>Figure 3: An event tree of an example jailbreak attack.</figcaption>
             </figure>
 
-            <p>Risk assessment at its core involves identifying potential risks and the critical bottlenecks that could allow these risks to escalate into harmful outcomes. Bottlenecks may emerge as key failure points, vulnerabilities, or pathways through which misuse, unintended consequences, or emergent behaviors might proliferate. Traditional approaches like fault tree analysis work backwards from potential harms to identify contributing factors, while forward-looking methods like event trees help map how initial events might progress through various paths. These complementary perspectives on risk pathways, drawn from established fields like system safety, can provide useful mental models when thinking about AI risk scenarios - particularly given the complex, interconnected nature of AI system behaviors and their effects. Together, these techniques lead to more comprehensive scenario generation, addressing the unique challenges posed by AI systems.</p>
+            <p>Risk assessment at its core involves identifying potential risks and the critical bottlenecks that could allow these risks to escalate into harmful outcomes. Bottlenecks may emerge as key failure points, vulnerabilities, or pathways through which misuse, unintended consequences, or emergent behaviors might proliferate. Traditional approaches such as fault tree analysis work backwards from potential harms to identify contributing factors, while forward-looking methods like event trees help map how initial events might progress through various paths. These complementary perspectives on risk pathways, drawn from established fields such as system safety, can provide useful mental models when thinking about AI risk scenarios - particularly given the complex, interconnected nature of AI system behaviors and their effects. Together, these techniques lead to more comprehensive scenario generation, addressing the unique challenges posed by AI systems.</p>
             
             <h2>Prospective Risk Analysis</h2>
 
-            <p>The analysis of potential future harms from AI systems requires structured methods suited to evaluating systemic vulnerabilities, unprecedented impacts, and complex societal interactions. As AI development accelerates, relying solely on hindsight—like focusing on a rearview mirror while driving—becomes inadequate. Predictive assessments are necessary to anticipate and address risks before they materialize.</p>
+            <p>The analysis of potential future harms from AI systems requires structured methods suited to evaluating systemic vulnerabilities, unprecedented impacts, and complex societal interactions. As AI development accelerates, relying solely on hindsight &mdash; like focusing on a rearview mirror while driving &mdash; becomes inadequate. Predictive assessments are necessary to anticipate and address risks before they materialize.</p>
 
             <p>Key components of prospective risk analysis include:</p>
 
             <ol>
-                <li><b>Bottleneck analysis:</b> Identifying critical points where system failures, emergent behaviors, or misuse could transition from manageable issues to cascading risks. This analysis helps assessors prioritize areas that could unlock or amplify harm potential by mapping key barriers that, if compromised, could enable rapid escalation of harm through societal systems.</li>
+                <li><b>Bottleneck analysis:</b>  Identifying critical points where system failures, emergent behaviors, or misuse could transition from manageable issues to cascading risks. This analysis helps assessors prioritize areas that could unlock or amplify harm potential by mapping key barriers that, if compromised, could enable rapid escalation of harm through societal systems.</li>
                 <li><b>Whitebox property observation:</b> Systematic study of a system's internal structure and dynamics across different scales, from its fundamental computational building blocks to its emergent behaviors during development, including the use of simplified analogs to understand behavioral patterns and risks.</li>
                 <li><b>Combinatorial analysis:</b> Systematic examination of how different aspects interact and amplify each other across scales to identify emergent risks not visible when aspects are evaluated independently.</li>
             </ol>
@@ -172,7 +172,7 @@
 
             <h2>Aspect-Oriented Hazard Modeling</h2>
 
-            <p>The PRA framework structures AI hazard modeling through aspect-oriented analysis, focusing on two key endpoints of the societal risk pathway: system aspects and potential impact domains. While complete causal pathways between these endpoints often remain uncertain or unknowable, examining both ends of potential harm chains - along with the mechanisms of systemic risk propagation - provides valuable insight into potential risks.</p>
+            <p>The PRA framework structures AI hazard modeling through aspect-oriented analysis, focusing on two key endpoints of the societal risk pathway: source aspects and terminal aspects. While complete causal pathways between these endpoints often remain uncertain or unknowable, examining both ends of potential harm chains &mdash; along with the mechanisms of systemic risk propagation &mdash; provides valuable insight into potential risks.</p>
 
             <p>At one end, the framework examines system aspects:</p>
             <ul>
@@ -211,7 +211,7 @@
             <h2>Current State of the Framework</h2>
             <div class="framework-status">
                 <p><strong>Workbook (v0.9.1-alpha):</strong>  An alpha version with functional components, released in November 2024. For more information on the workbook and release schedule, see the <a href="workbook.html">workbook</a> page</p>
-                <p><strong>Research Paper:</strong> Scheduled for release in Q1 2025. </p>
+                <p><strong>Research Paper:</strong> Scheduled for release in Q2 2025. </p>
             </div>
             <h2>Contact Us</h2>  
             <p>The PRA framework is continuously evolving to address the rapidly advancing field of AI risk assessment. We value your insights and feedback to help refine our framework and ensure it remains as useful as it can be in AI safety practice. Whether you have questions, suggestions, or want to discuss customizing the framework for your specific needs, we encourage you to reach out to us via email:</p>
