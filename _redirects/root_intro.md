@@ -1,5 +1,5 @@
 ---
 layout: null
-permalink: /pra/IntroducingPRAforAI.pdf
-redirect_to: /pra/Paper/AdaptingPRAforAI.pdf
+permalink: /IntroducingPRAforAI.pdf
+redirect_to: /Paper/AdaptingPRAforAI.pdf
 ---
