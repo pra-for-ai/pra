@@ -125,7 +125,7 @@ h1 {
 
 .subtitle {
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 nav {
@@ -783,14 +783,14 @@ p, h2, h3, li {
 
     .header-title h1 {
         padding-top: 0.2em;
-        font-size: 1.8em;
+        font-size: 1.6em;
         line-height: 1.3; 
         margin: 0 0 10px 0;
     }
 
     .subtitle {
         margin-top: auto;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .content {
@@ -798,7 +798,7 @@ p, h2, h3, li {
     }
     
     h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     
     nav {
