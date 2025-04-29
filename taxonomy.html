@@ -107,26 +107,53 @@
         <div class="content">
             <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0.5cm;">A Taxonomy for More Comprehensive AI Hazard Identification</h2>
             
-            <p>Central to the PRA for AI framework, the Aspect-Oriented Taxonomy of AI Hazards provides the essential structure for systematically exploring the hazard space and identifying consequential threats. This avoids reliance on ad-hoc lists, ensuring more comprehensive hazard discovery tailored to the AI system under study.</p>
+            <p>Identifying the diverse and complex ways advanced AI systems might cause harm requires moving beyond selective or ad-hoc lists of potential risks. The Aspect-Oriented Taxonomy of AI Hazards provides the essential structure for systematically exploring the hazard space and identifying consequential threats. This avoids reliance on ad-hoc lists, ensuring more comprehensive hazard discovery tailored to the AI system under study.</p>
 
-            <p>Developed from first principles and grounded in systems thinking, this taxonomy organizes potential risks around the four fundamental aspect categories as shown in the figure below: Capabilities, Domain Knowledge, Affordances, and Impact Domains. It conceptually links the system's inherent properties ('source aspects': Capabilities, Domain Knowledge, Affordances) to the contexts where harms ultimately manifest ('terminal aspects' within Impact Domains).</p>
+            <h3>A First-Principles Approach</h3>
+            <p>
+            This taxonomy decomposes AI risk based on a systems-thinking perspective, analyzing the AI entity, its environment, and their interaction. It organizes potential hazards across four high-level aspect categories (TL0):
+            </p>
+            <ol>
+            <li><strong>Capabilities:</strong> The inherent abilities of the AI system (e.g., reasoning, learning, agency).</li>
+            <li><strong>Domain Knowledge:</strong> Specific expertise possessed by the AI that could enable harm (e.g., cybersecurity vulnerabilities, biology).</li>
+            <li><strong>Affordances:</strong> How the AI interacts with its environment (e.g., API access, deployment context, system interfaces).</li>
+            <li><strong>Impact Domains:</strong> The sociotechnical areas where harms ultimately manifest (e.g., individuals, society, the biosphere).</li>
+            </ol>
 
-            <p>This structured approach guides the identification of specific 'aspect-adjacent hazards', whether viewing them as potential harms originating directly from or being enabled by the system's source aspects (Capabilities, Knowledge, Affordances) or as vulnerabilities within the terminal aspects (Impact Domains) through which risks manifest before final impact. This enables assessors using bottleneck and risk pathway analysis to systematically probe potential failure modes from both ends of the causal chain.</p>
 
-            <h3>Taxonomy Structure</h3>
-            <p>The taxonomy is organized hierarchically into the following Taxonomy Levels (TLs):</p>
+            <h3>Hierarchical Structure</h3>
+            <p>These categories are broken down hierarchically through five Taxonomy Levels (TL0 to TL4), moving from broad categories to specific aspect-adjacent hazards:</p>
 
             <div class="taxonomy-structure">
                 <ul>
-                    <li><strong>TL0: Aspect Category</strong> - The highest-level classification, representing primary dimensions of AI system analysis in sociotechnical context</li>
-                    <li><strong>TL1: Aspect Group</strong> - Major subdivisions within each Aspect Category, providing a more granular framework for analysis</li>
-                    <li><strong>TL2: Aspect</strong> - Specific elements or characteristics within each Aspect Group, offering detailed points of consideration for hazard identification</li>
-                    <li><strong>TL3: Hazard Cluster</strong> - Groupings of related hazards that may span multiple Aspects, allowing for flexible categorization and cross-cutting analysis</li>
-                    <li><strong>TL4: AI Hazard (Aspect-derived)</strong> - Individual, specific hazards derived from the analysis of various Aspects and their interactions, representing concrete hazards within the AI system's sociotechnical context</li>
-                </ul>
+                    <li><strong>Aspect Categories (TL0):</strong> The four main categories (Capabilities, Domain Knowledge, Affordances, Impact Domains).</li>
+                    <li><strong>Aspect Groups (TL1):</strong> Major subdivisions within the Aspect Categories.</li>
+                    <li><strong>Aspects (TL2):</strong> Specific system characteristics or elements within each group.</li>
+                    <li><strong>Hazard Clusters (TL3):</strong> Related groups of hazards, potentially spanning multiple Aspects.</li>
+                    <li><strong>AI Hazards (TL4):</strong> Individual potential harms or vulnerabilities identified through analysis.</li>
+                  </ul>                  
             </div>
 
-            <h3>Explore the Taxonomy</h3>
+            <h3>Linking System Properties to Real-World Harms</h3>
+            <p>
+            Conceptually, the taxonomy connects the system's inherent properties—termed 'source aspects' (within Capabilities, Domain Knowledge, Affordances)—to the contexts where harms ultimately manifest, known as 'terminal aspects' (within Impact Domains).
+            </p>
+            <p>
+            This structure guides the identification of specific 'aspect-adjacent hazards'. These are the potential harms or vulnerabilities originating directly from, or enabled by, the system's source aspects, or the vulnerabilities within terminal aspects through which risks manifest before final impact. By explicitly mapping these connections, the taxonomy enables assessors using bottleneck analysis and risk pathway modeling to systematically probe potential failure modes from both ends of the causal chain (i.e., from system capabilities towards societal impacts, and tracing back from potential impacts to enabling system characteristics).
+            </p>
+
+            <h3>Benefits</h3>
+            <p>This taxonomy:</p>
+            <ul>
+            <li>Provides a comprehensive index for exploring the hazard space.</li>
+            <li>Guides assessors systematically, reducing blind spots.</li>
+            <li>Facilitates the integration of findings from specialized analyses (e.g., bias, security, misuse).</li>
+            <li>Enables structured comparison of risks across different systems and contexts.</li>
+            <li>Forms the backbone of the Risk Detail Table used in the <a href="workbook.html">Workbook</a> Tool.</li>
+            </ul>
+
+
+            <h3>Explore the Taxonomy (TL0-TL2)</h3>
             <p>The taxonomy of aspect-oriented AI Hazards is presented below. In this visualization:</p>
             <ul>
                 <li><strong>Dark-colored boxes</strong> represent Aspect Categories (TL0)</li>
@@ -134,7 +161,7 @@
                 <li><Strong>Light-colored boxes</Strong> show individual Aspects (TL2)</li>
             </ul>
 
-            <p>You can scroll through the visualization to explore the detailed structure and content of the taxonomy. The Hazard Clusters and Aspect-Derived AI Hazards will be released on this webpage soon.</p>
+            <p>Examples of Hazard Clusters (TL3) and AI Hazards (TL4) are expected to be added to this webpage over time.</p>
 
             <div class="taxonomy-container">
                 <div class="bounding-box main-box"></div>

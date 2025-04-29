@@ -126,6 +126,7 @@ h1 {
 .subtitle {
     font-style: normal;
     font-size: 1em;
+    margin-top: -0.3em;
 }
 
 nav {

@@ -164,9 +164,10 @@
     <main>
         <div class="content">
           <h2 style="width: 100%; font-weight: normal; color: #333333; margin-top: 0.5cm;">The PRA for AI Workbook Tool</h2>
-          <p>The PRA for AI framework is implemented in a practical workbook tool (currently available as a structured spreadsheet). It offers an integrated environment to facilitate assessment work, including all components and protocols for selecting assessment complexity, executing the assessment, and generating a final risk report card.</p>  
+          <h3 style="text-align: left">Bridging Theory and Practice</h3>
+          <p>The PRA for AI framework is implemented in a practical <strong>Workbook</strong> tool (currently available as a structured spreadsheet). This tool guides assessors step-by-step through the risk assessment process, ensuring methodological soundness and consistent documentation.</p>  
           <div class="image-gallery">
-                <h3>Workbook Components</h3>
+                <h3 style="text-align: left">Workbook Components Overview</h3>
                 <div class="gallery-grid">
                   <figure>
                     <img src="Images/userguide.png" alt="User Guide">
@@ -218,9 +219,24 @@
                   </figure>
                 </div>
               </div>
-              <p>The workbook tool was initially released in October 2024 as version 0.9.0-alpha and is under active development. The current v0.9.1-alpha release provides a functional foundation for conducting systematic risk assessments. The workbook includes structured support for scanning potential risks through an aspect-oriented taxonomy of AI Hazards, extensive guidance on modelling threats, generating risk scenarios and estimating levels of risk, as well as detailed instructions on documenting each step of the process. Users receive an auto-generated risk report card that presents their aggregate findings, together with an output log—a static version of the entry log that preserves risk scenarios, assumptions, and data for future reference and comparison.</p>
-            <h2> </h2>
+              <p style="text-align: center; font-size: 0.95em">An overview of the main components and workflow elements within the PRA for AI Workbook tool.</p>
+              <h3 style="text-align: left;">Key Features</h3>
+              <ul>
+                <li><strong>Guided Workflow:</strong> Guides assessors through aspect selection, scenario generation, severity and likelihood analysis, interaction and propagation analysis, and results aggregation (See Figure <a href="index.html#fig3">3</a>).</li>
+                <li><strong>Assessment Maturity Levels (AMLs):</strong> Configurable protocols for assessment depth and scope.</li>
+                <li><strong>Risk Assessment Entry Log:</strong> Place for documenting system information, scenarios, assumptions, evidence, HSL/LL estimates, and rationale.</li>
+                <li><strong>Risk Detail Table:</strong> Integrates the hazard taxonomy with Plausible Qualifiers to aid scenario ideation and calibration.</li>
+                <li><strong>Standardized Rubrics &amp; Tables:</strong> Includes HSL and LL definitions, reference examples, and the Risk Level mapping table.</li>
+                <li><strong>Analysis Templates:</strong> Includes Aspect Interaction Matrix and Propagation Operator tables for analysis (in selected AMLs).</li>
+                <li><strong>Automated Outputs:</strong> Generates a <strong>Risk Report Card</strong> summarizing aggregated risk levels alongside focused aggregation views based on systemic risk dimensions, a <strong>Tallied Risk Matrix</strong> showing scenario distribution, and a detailed <strong>Output Log</strong>.</li>
+              </ul>
+
+              <h3 style="text-align: left;">Current Status & Development</h3>
+
+              <p>The workbook tool was initially released in October 2024 as version 0.9.0-alpha and is under active development. The current <strong>v0.9.1-alpha release</strong> provides a functional foundation for conducting systematic risk assessments. The workbook includes structured support for scanning potential risks through an aspect-oriented taxonomy of AI Hazards, extensive guidance on modelling threats, generating risk scenarios and estimating levels of risk, as well as detailed instructions on documenting each step of the process. Users receive an auto-generated risk report card that presents their aggregate findings, together with an output log—a static version of the entry log that preserves risk scenarios, assumptions, and data for future reference and comparison.</p>
             
+              <h3 style="text-align: left;">Get the Tool & Guide</h3>
+              
               
             <div class="download-section">
               
@@ -259,10 +275,13 @@
               </a>
             </div>
 
-            <p>The buttons above provide access to a copy of the workbook and a static rendering of the interactive user guide from the workbook, with pre-selected settings for the AML-120 team assessment protocol. For more information about the assessment settings, please refer to the complete user guide. Watch the quick start navigation video below.</p>
+            <p>The buttons above provide access to a copy of the workbook and a static rendering of the interactive user guide directly from the workbook, with pre-selected settings for the <Strong>AML-120 team assessment protocol</Strong> (<i>recommended for a balanced, standard assessment</i>). For more information about assessment settings and other AML protocols, please refer to the complete user guide within the workbook.</p>
+            
 
+            <h3 style="text-align: left;">Quick Start</h3>
+            <p>Watch the quick start navigation video below for an introduction to using the workbook. </p>
             <section class="video-section">
-              <h3>Quick Start Guide</h3>
+              
               <div class="video-container">
                 <div class="video-item">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_fWLLxwqrPI?si=rrb7CSpbClfNBWBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -272,10 +291,10 @@
             </section>
 
 
-                <h2>Release Schedule</h2>
+            <h3 style="text-align: left;">Release Schedule & Roadmap</h3>
                 
                 <div class="roadmap-intro">
-                    <p>The PRA for AI workbook is under active development. Current releases and planned updates and features are documented below. Please note that these dates and features are subject to change.</p>
+                    <p>The PRA for AI workbook is under active development. Current releases and planned updates and features are documented below. <i>Please note that these dates and features are subject to change.</i></p>
                 </div>
             
                 <div class="version-table-container">
@@ -294,9 +313,9 @@
                                 <td>Initial alpha release with basic functionality</td>
                             </tr>
                             <tr>
-                                <td>0.9.1-alpha</td>
-                                <td>19th November 2024</td>
-                                <td>Updated assessment workflow and report card</td>
+                              <td><strong>0.9.1-alpha</strong></td>
+                              <td><strong>19th November 2024</strong></td>
+                              <td><strong>Updated assessment workflow and report card</strong></td>
                             </tr>
                             <tr>
                               <td>0.9.2-alpha</td>
@@ -307,18 +326,24 @@
                     </table>
                 </div>
 
-                <div class="roadmap-notes">
-                  <h3>Upcoming Features</h3>
-                  <ul>
-                      <li>Lower taxonomy levels including Hazard Clusters (TL3) and AI Hazards (TL4)</li>
-                      <li>Capability Levels and Domain Knowledge Levels calibration tables</li>
-                      <li>Further examples to guide workbook component usage</li>
-                      <li>Detailed foundational model risk assessment case study</li>
-                  </ul>
-                </div>
-            
-                
-                <p>The development team is actively seeking user feedback to enhance and streamline the assessment workflow.</p>
+                <h3 style="text-align: left;">Upcoming Updates</h3>
+                <ul>
+                  <li>Lower taxonomy levels including Hazard Clusters (TL3) and AI Hazards (TL4)</li>
+                  <li>Capability Levels and Domain Knowledge Levels calibration tables</li>
+                  <li>Further examples to guide workbook component usage</li>
+                  <li>Detailed foundational model risk assessment case study</li>
+                </ul>
+
+                <h3 style="text-align: left;">Who Is It For?</h3>
+                <p>
+                  The workbook is designed for: AI Developers, evaluators, auditors, risk managers, safety researchers, and oversight bodies involved in assessing advanced AI systems.
+                </p>
+
+                <h3 style="text-align: left;">Feedback</h3>
+                <p>
+                  Feedback on the workbook's usability and features is welcomed to inform future development. Contact information is available <a href="index.html#contactus">here</a>.
+                </p>
+                            
             </div>
         </main>
     <div class="header-bar">‎</div>
