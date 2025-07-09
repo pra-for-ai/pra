@@ -38,7 +38,7 @@
                 <div class="subtitle">Adapting Probabilistic Risk Assessment for AI</div>
             </div>
             <nav>
-                <a href="index.html">OVERVIEW</a>
+                <a href="index.html">FRAMEWORK</a>
                 <a href="need.html">NEED</a>
                 <a href="taxonomy.html">TAXONOMY</a>
                 <a href="workbook.html">WORKBOOK</a>
@@ -54,20 +54,47 @@
             <p style="margin: 1.5em 0; line-height: 1.6;">
                 This page provides access to the research paper detailing the conceptual foundations, methodology, rationale, and context for the PRA for AI framework.
             </p>
-            <h3>Citation:</h3>
-            <p>Wisakanto, A. K., Rogero, J., Casheekar, A. M., & Mallah, R. (2025). Adapting Probabilistic Risk Assessment for AI. arXiv preprint arXiv:2504.18536. [cs.AI] 25 Apr 2025.</p>
-            <h3>The paper covers:</h3>
-            <ul>
-            <li>The landscape of AI risk and limitations of current assessment methods.</li>
-            <li>The adaptation of traditional PRA techniques for AI systems.</li>
-            <li>Detailed explanations of Aspect-Oriented Hazard Analysis, Risk Pathway Modeling, and Uncertainty Management.</li>
-            <li>The structure and intended use of the framework components.</li>
-            <li>Discussion of applications, limitations, and future research directions.</li>
-            </ul>
-            <p>Preprint released April 2025.</p>
+
+            <h3>Abstract:</h3>
             <p style="margin: 1.5em 0; line-height: 1.6;">
-            The paper is available on this <a href="https://arxiv.org/abs/2504.18536" title="Download PDF">link</a>.
+                Modern general-purpose artificial intelligence (AI) systems present an urgent risk management challenge, as their rapidly evolving capabilities and potential for catastrophic harm outpace our ability to reliably assess their risks. Current methods often rely on selective testing and undocumented assumptions about risk priorities, frequently failing to make a serious attempt at assessing the set of pathways through which AI systems pose direct or indirect risks to society and the biosphere. This paper introduces the probabilistic risk assessment (PRA) for AI framework, adapting established PRA techniques from high-reliability industries (e.g., nuclear power, aerospace) for the new challenges of advanced AI. The framework guides assessors in identifying potential risks, estimating likelihood and severity bands, and explicitly documenting evidence, underlying assumptions, and analyses at appropriate granularities. The framework's implementation tool synthesizes the results into a risk report card with aggregated risk estimates from all assessed risks. It introduces three methodological advances: (1) Aspect-oriented hazard analysis provides systematic hazard coverage guided by a first-principles taxonomy of AI system aspects (e.g. capabilities, domain knowledge, affordances); (2) Risk pathway modeling analyzes causal chains from system aspects to societal impacts using bidirectional analysis and incorporating prospective techniques; and (3) Uncertainty management employs scenario decomposition, reference scales, and explicit tracing protocols to structure credible projections with novelty or limited data. Additionally, the framework harmonizes diverse assessment methods by integrating evidence into comparable, quantified absolute risk estimates for lifecycle decisions. We have implemented this as a workbook tool for AI developers, evaluators, and regulators.
             </p>
+
+            <h3>Citation:</h3>
+            <p style="margin: 1.5em 0; line-height: 1.6;">
+                Wisakanto, A. K., Rogero, J., Casheekar, A. M., & Mallah, R. (2025). Adapting Probabilistic Risk Assessment for AI. arXiv preprint arXiv:2504.18536. [cs.AI] 25 Apr 2025.
+            </p>
+
+            <pre style="background-color: #f5f5f5; padding: 1em; border-radius: 5px; overflow-x: auto;">
+@misc{wisakanto2025adaptingprobabilisticriskassessment,
+    title={Adapting Probabilistic Risk Assessment for AI},
+    author={Anna Katariina Wisakanto and Joe Rogero and Avyay M. Casheekar and Richard Mallah},
+    year={2025},
+    eprint={2504.18536},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
+    url={https://arxiv.org/abs/2504.18536},
+}</pre>
+
+            <h3>The paper covers:</h3>
+            <ul style="line-height: 1.8;">
+                <li>The landscape of AI risk and limitations of current assessment methods.</li>
+                <li>The adaptation of traditional PRA techniques for advanced AI systems.</li>
+                <li>Detailed explanations of aspect-oriented hazard analysis, risk pathway modeling, and uncertainty management.</li>
+                <li>The practical implementation of the PRA for AI workbook tool, detailing its components and use in conducting assessments.</li>
+                <li>The framework's practical utility, including its integration with existing methods and its benefits for diverse stakeholders (e.g., developers, regulators, and enterprise adopters).</li>
+                <li>Discussion of applications, limitations, and future research directions.</li>
+            </ul>
+
+            <p style="margin: 1.5em 0; line-height: 1.6;">
+                Preprint released April 2025.
+            </p>
+
+            <p>For a detailed methodology of the PRA for AI framework, please refer to the <a href="https://arxiv.org/abs/2504.18536" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">paper</a>.</p>
+
+<h3>Related Resources:</h3>
+<p><a href="workbook.html" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Workbook Tool</a> - Practical implementation of the framework</p>
+<p><a href="taxonomy.html" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Taxonomy</a> - Aspect-Oriented Taxonomy of AI Hazards</p>
 
         </div>
         

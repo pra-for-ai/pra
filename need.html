@@ -61,7 +61,7 @@
                 <div class="subtitle">Adapting Probabilistic Risk Assessment for AI</div>
             </div>
             <nav>
-              <a href="index.html">OVERVIEW</a>
+              <a href="index.html">FRAMEWORK</a>
               <a href="need.html">NEED</a>
               <a href="taxonomy.html">TAXONOMY</a>
               <a href="workbook.html">WORKBOOK</a>
@@ -77,7 +77,7 @@
             <p>Advanced AI systems possess unprecedented leverage and unique characteristics that set them apart from traditional technologies:</p>
 
             <ol>
-                <li><b>Global impact:</b> Given their widespread direct adoption, broad proliferation, and unprecedented leverage, AI systems have the potential for widespread, even global, effects.</li>
+                <li><b>Societal impact:</b> Given their widespread direct adoption, broad proliferation, and unprecedented leverage, AI systems have the potential for widespread, even global, effects.</li>
                 
                 <li><b>Emergent behaviors:</b> AI systems can develop behaviors and pursue objectives that emerge from, but were not explicitly encoded in, their training. These behaviors often lack historical precedent, making risk assessment through traditional pattern-matching difficult.</li>
                 
@@ -96,16 +96,16 @@
                         
             <p>But the risks posed by today's and tomorrow's models enter territory for which no precedent yet exists. Large problems lurk beyond the horizon of what can be tested in a few weeks. AI risk assessment must therefore draw more heavily on analytical models, theory, and expert testimony than most popular methods.</p>
 
-            <h2>Need for AI Probabilistic Risk Assessment</h2>
+            <h2>Need for Probabilistic AI Risk Assessment</h2>
 
             <p>The unique characteristics of AI systems demand specialized risk assessment methodologies. Key factors driving this need include:</p>
 
             <ul>
-                <li><b>Rapid risk development:</b> The rapid pace of development toward general-purpose AI systems, which may introduce significant hazards, necessitates specialized assessment procedures to ensure their safety.</li>
-                
-                <li><b>Limitations of current methods:</b> Traditional risk assessment approaches do not adequately address the complexity and scale of AI risks. Many more parties need to think about risk management for AI as a differential threat assessment for the world.</li>
-                
                 <li><b>Prospective assessment:</b> Methods must identify and model latent risks beyond those that can be easily elicited before they manifest, due to the scale of risks.</li>
+                
+                <li><b>Limitations of current methods:</b> Traditional risk assessment approaches do not adequately address the complexity and scale of AI risks, and do not attempt to enable end-to-end absolute risk quantification. Many more parties need to think about risk management for AI as a differential threat assessment for the world.</li>
+                
+                <li><b>Rapid risk development:</b> The rapid pace of development toward general-purpose AI systems, which may introduce significant hazards, necessitates specialized assessment procedures to ensure their safety.</li>
                 
                 <li><b>Regulatory demand:</b> Regulators require a broader and deeper mix of methods to evaluate AI systems and establish meaningful safety thresholds.</li>
             </ul>
@@ -114,36 +114,30 @@
                         
             <h2>Comparison of Risk Assessment Methods</h2>
 
-            <p>Current AI risk assessment methods vary in their approach and effectiveness. In particular, they vary across the following criteria for comprehensive threat surface analysis:</p>
+            <p>Current AI risk assessment methods vary in their approach and effectiveness. In particular, they vary across the following criteria for comprehensive threat landscape analysis:</p>
 
             <ul>
                 <li>A method can operate at different levels of detail. Fine-grained methods enable detailed analysis of specific risk components, while coarse-grained methods provide higher-level system assessment.</li>
                 
-                <li>A method can cover more or less of the societal threat surface, e.g., by number of threat models.</li>
+                <li>A method can cover more or less of the societal threat landscape, e.g., by number of threat models.</li>
                 
-                <li>A method can provide systematic guidance over the threat surface of AI risk&mdash;or, it can lack such guidance.</li>
+                <li>A method can provide systematic guidance for exploring the societal threat landscape—or, it can lack such guidance.</li>
                 
-                <li>A method can be more or less informed by a specific system's characteristics&mdash;for example, specific capabilities or features.</li>
+                <li>A method can be more or less informed by a specific system's characteristics—for example, specific capabilities or features.</li>
                 
                 <li>A method can be a better or worse proxy for safety.</li>
                 
                 <li>A method can be more or less robust to mitigation failure. A robust method includes the possibility of mitigation failure, estimates its likelihood, and prices it in.</li>
                 
-                <li>A method can be more or less "objective." An objective method requires little or no subjective input&mdash;more example, a benchmark is an objective method.</li>
+                <li>A method can be more or less "objective." An objective method requires little or no subjective input—more example, a benchmark is an objective method.</li>
                 
-                <li>A method can support prospective analysis of a system's risk&mdash;that is, it can identify leading indicators of risk, rather than retrospective evaluation once a system is already developed or deployed.</li>
+                <li>A method can support prospective analysis of a system's risk—that is, it can identify leading indicators of risk, rather than retrospective evaluation once a system is already developed or deployed.</li>
                 
                 <li>A method can consider harm severity in addition to likelihood, or only consider likelihood.</li>
             </ul>
 
             <p>Figure 1 compares current evaluation methods across these criteria. Ratings were assigned based on expert analysis of each method's capabilities and limitations. High (H) indicates strong performance or comprehensive coverage of the criterion, Medium (M) indicates partial fulfillment, and Low (L) indicates minimal or no attention to the criterion.</p>
-            <!-- <figure>
-                <img src="Images/heatmap.png" alt="Comparison of Risk Assessment Methods" class="flowchart">
-                <figcaption>Figure 1: Comparison of Risk Assessment Methods. <br>
-                    Legend: H = High, M = Medium, L = Low. Scores indicate the degree to which each method
-addresses or fulfills the given criterion
-                </figcaption>
-            </figure> -->
+          
             <figure>
               <div class="assessment-matrix">
                <div class="matrix-header">
@@ -317,7 +311,7 @@ addresses or fulfills the given criterion
               <figcaption>Figure 1: Comparison of Risk Assessment Methods.
               Ratings indicate the degree to which each method addresses or fulfills the given criterion</figcaption>
               </figure>
-            <p>A comparative analysis of AI risk assessment methods demonstrates that no single approach excels across all criteria, highlighting the need for a multi-faceted approach. In particular, many current methods struggle with threat surface coverage and robustness to mitigation failure. However, probabilistic risk assessment shows the most balanced performance across dimensions. A forthcoming paper, defining the societal threat surface, will provide a more detailed explanation of risk assessment gaps and how available methods compare.</p>
+            <p>A comparative analysis of AI risk assessment methods demonstrates that no single approach excels across all criteria, highlighting the need for a multi-faceted approach. In particular, many current methods struggle with threat landscape coverage and robustness to mitigation failure. However, probabilistic risk assessment shows the most balanced performance across dimensions. A forthcoming paper, defining the societal threat landscape, will provide a more detailed explanation of risk assessment gaps and how available methods compare.</p>
             <h2>Benefits of the PRA for AI Framework</h2>
 
             <p>The Probabilistic Risk Assessment (PRA) AI framework offers several key benefits that address the unique challenges of AI risk assessment:</p>
@@ -325,15 +319,13 @@ addresses or fulfills the given criterion
             <ul>
                 <li><b>Variable-resolution analysis:</b> The framework supports assessments scaling from quick high-level risk scans to comprehensive technical analysis of specific risk pathways, with clear documentation of scenarios and reasoning at each level.</li>
                 
-                <li><b>Comprehensive system aspect coverage:</b> The framework uses a first principles top-down taxonomy of aspect-oriented AI hazards that covers capabilities, high-risk knowledge Domains, operational affordances, and sociotechnical impact domains. It captures first and second order risks, considering effects on individuals, society, and the biosphere.</li>
-                
-                <li><b>Risk coverage:</b> The framework offers a top-down perspective on the hazards from general purpose AI systems. This includes a structured approach to examining both competence-based and incompetence-based hazards across the AI system's capabilities, high-risk knowledge domains and operational affordances.</li>
+                <li><b>Systematic risk coverage:</b> Employs a first-principles, Aspect-Oriented Taxonomy of AI Hazards to guide a top-down analysis across an AI system's capabilities, high-risk knowledge domains, operational affordances, and sociotechnical impact domains. It captures first and second order risks, considering effects on individuals, society, and the biosphere.</li>
                 
                 <li><b>Consideration of direct and systemic risks:</b> The framework allows for the assessment of both immediate, direct harms and more subtle, long-term systemic risks.</li>
                 
                 <li><b>Explicit assumptions and likelihood documentation:</b> The framework prompts assessors to make their detailed assumptions, reasoning and estimates explicit. This transparency enhances the reliability and reproducibility of the assessment process.</li>
                 
-                <li><b>Integration with assessment methods:</b> The framework unifies and incorporates diverse assessment approaches within a structured evaluation framework. This allows assessment teams to incorporate existing safety cases, benchmarking or evaluation data and other risk assessment methods alongside or within the PRA methodology.</li>
+                <li><b>Integration with assessment methods:</b> The framework unifies and incorporates diverse assessment approaches within a structured evaluation framework. This allows assessment teams to incorporate existing safety cases, benchmarking or evaluation data and other risk assessment methods alongside or within the PRA for AI methodology.</li>
             </ul>
 
             <h2>Framework Limitations</h2>
@@ -341,12 +333,12 @@ addresses or fulfills the given criterion
             <ul>
                 <li><strong>Subjectivity in probability estimates:</strong> The framework requires careful calibration of probability estimates across assessors, particularly for novel scenarios without historical precedent. This could lead to inconsistent assessments.</li>
                 <li><strong>Rapid AI advancement challenges:</strong> The fast-paced evolution of AI capabilities may outpace the assessment process, making some evaluations quickly outdated.</li>
-                <li><strong>Unknown unknowns:</strong> PRA may not adequately capture unforeseen risks or emergent behaviors in advanced AI systems.</li>
+                <li><strong>Unknown unknowns:</strong> PRA for AI may not adequately capture unforeseen risks or emergent behaviors in advanced AI systems.</li>
                 <li><strong>Potential for anchoring bias:</strong> Predefined categories and examples might inadvertently anchor assessors' thinking, limiting consideration of unconventional scenarios.</li>
                 <li><strong>Resource intensive:</strong> Thorough PRAs require significant time and expertise, which may be challenging for smaller organizations or rapid development cycles.</li>    
             </ul>
 
-            <p>For a detailed methodology of the PRA framework, please refer to the <a href="paper.html">paper</a>.</p>
+            <p>For a detailed methodology of the PRA for AI framework, please refer to the <a href="paper.html" style="color: #007bff; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">paper</a>.</p>
          </div>
     </main>
     <div class="header-bar">‎</div>
